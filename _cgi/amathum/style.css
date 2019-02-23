@@ -1,0 +1,21 @@
+@charset "utf-8";
+.amathum {
+	margin: 10px;
+	float: right;
+	clear:right;
+}
+.amathum img {
+	border-width: 0px;
+}
+.title {
+	font-weight: bold;
+	font-size: 110%;
+	color: #9999FF;
+	padding: 10px;
+	border-width: 0px 0px 3px;
+	border-color: #CCCCFF;
+	border-style: double;
+}
+.review {
+	padding: 10px;
+}

@@ -1,0 +1,16 @@
+@charset "utf-8";
+h1 {
+	font-family: '平成明朝','ＭＳ Ｐ明朝',serif;
+	font-weight: bold;
+	font-size: 200%;
+	color: #3333CC;
+	padding: 20px 10px;
+	border-width: 0px 0px 3px;
+	border-color: #3333CC;
+	border-style: double;
+}
+h2 {
+	font-family: '平成明朝','ＭＳ Ｐ明朝',serif;
+	font-size: 160%;
+	padding: 1em 10px;
+}
