@@ -17,7 +17,7 @@ infobar({
         {
             "width": "88",
             "alt": "デデフラ",
-            "src": "/ddfl/asset/banner.gif",
+            "src": "/ddfl/img/banner.gif",
             "href": "/ddfl/index.html",
             "height": "31"
         }
