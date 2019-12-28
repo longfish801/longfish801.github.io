@@ -4,11 +4,11 @@
 @import url(/_style/csslib/footer.css);
 @import url(/_style/csslib/side.css);
 #header {
-	width: 45%;
+	width: 40%;
 	float: left;
 }
 #side {
-	width: 45%;
+	width: 50%;
 	float: right;
 	text-align: right;
 }

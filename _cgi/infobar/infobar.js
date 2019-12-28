@@ -2,6 +2,13 @@ infobar({
     "banner": [
         {
             "width": "88",
+            "alt": "探偵が推理を殺す",
+            "src": "/_style/img/ban_reasoning.png",
+            "href": "/pages/2019/191229_reasoning/",
+            "height": "31"
+        },
+        {
+            "width": "88",
             "alt": "ハィパァゲィム",
             "src": "/_style/img/ban_hyga.png",
             "href": "/pages/2016/160814_hypergame/",
