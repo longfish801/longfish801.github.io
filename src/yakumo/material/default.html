@@ -54,6 +54,10 @@
 			height: 2.2rem;
 		}
 
+		nav.logos {
+			line-height: 2.5rem;
+		}
+
 		div.toc {
 			line-height: 2.5rem;
 		}
@@ -125,7 +129,7 @@
 
 	<!-- ロゴ、サイト案内 -->
 	<nav class="row justify-content-center align-items-center my-3 p-3">
-		<nav class="col-lg-6 text-center">
+		<nav class="logos col-lg-6 text-center">
 			<% draft.solve('/draft/logos').lowers.values().each { def logo -> %>
 			<a href="${logo.href}"><img src="${logo.src}" alt="${logo.altText}" class="logo" /></a>
 			<% } %>
@@ -165,11 +169,11 @@
 		<section class="container tab-pane fade show${(idx == 0)? ' active' : ''}" id="${tab.name}" role="tabpanel" aria-labelledby="${tab.name}-tab">
 			<div class="row justify-content-center">
 				<!-- 目次リンク -->
-				<div class="toc col-lg-12 p-2">
+				<nav class="toc col-lg-12 p-2">
 				<% tab.findAll(/section:.+/).each { def section -> %>
 					<a href="#${section.name}" class="btn btn-light">＃${section.dfltHtml}</a>
 				<% } %>
-				</div>
+				</nav>
 			</div><!-- end of row -->
 			<% tab.findAll(/section:.+/).each { def section -> %>
 			<div class="row justify-content-center">
