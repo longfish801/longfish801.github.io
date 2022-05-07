@@ -37,7 +37,7 @@
 			text-align: center;
 		}
 
-		aside {
+		article {
 			background-image: url(img/mat/skel.gif);
 			border-left: 1px dashed #999999;
 			border-right: 1px dashed #999999;
@@ -176,24 +176,24 @@
 				<h2 class="col-lg-8 my-3 p-2" id="${section.name}">${section.dfltHtml}</h2>
 			</div><!-- end of row -->
 			<div class="row">
-				<% section.findAll(/aside:.+/).each { def aside -> %>
-				<aside class="col-lg-${tab.col} p-0">
+				<% section.findAll(/article:.+/).each { def article -> %>
+				<article class="col-lg-${tab.col} p-0">
 					<% if (tab.name == 'novel'){ %>
-					<header class="heading px-3">${aside.anchor}</header>
-					<div class="ccopy px-3 pt-3 pb-1">${aside.ccopyHtml}</div>
-					<div class="guide px-3 pt-2">${aside.dfltHtml}</div>
-					<div class="meta px-3">${aside.pubdate}公開 ${aside.pnum}枚/四百字詰</div>
+					<header class="heading px-3">${article.anchor}</header>
+					<div class="ccopy px-3 pt-3 pb-1">${article.ccopyHtml}</div>
+					<div class="guide px-3 pt-2">${article.dfltHtml}</div>
+					<div class="meta px-3">${article.pubdate}公開 ${article.pnum}枚/四百字詰</div>
 					<% } else if (tab.name == 'text'){ %>
-					<header class="heading px-3">${aside.anchor}</header>
-					<% if (aside.dflt != null){ %><div class="guide px-3">${aside.dfltHtml}</div><% } %>
-					<div class="meta px-3">${aside.pubdate}公開</div>
+					<header class="heading px-3">${article.anchor}</header>
+					<% if (article.dflt != null){ %><div class="guide px-3">${article.dfltHtml}</div><% } %>
+					<div class="meta px-3">${article.pubdate}公開</div>
 					<% } else if (tab.name == 'selfpub'){ %>
-					<div class="floatimg"><a href="${aside.href}"><img src="${aside.src}" alt="${aside.titleText}" width="150"></a></div>
-					<header class="heading px-3">${aside.anchor}</header>
-					<div class="guide px-3">${aside.dfltHtml}</div>
-					<div class="meta px-3">${aside.pubdate}公開</div>
+					<div class="floatimg"><a href="${article.href}"><img src="${article.src}" alt="${article.titleText}" width="150"></a></div>
+					<header class="heading px-3">${article.anchor}</header>
+					<div class="guide px-3">${article.dfltHtml}</div>
+					<div class="meta px-3">${article.pubdate}公開</div>
 					<% } %>
-				</aside>
+				</article>
 				<% } %>
 			</div><!-- end of row -->
 			<% } %>
@@ -218,21 +218,21 @@
 				<div class="modal-body">
 				<% draft.solve('/draft/guide').lowers.values().each { def section -> %>
 					<h2>${section.dfltHtml}</h2>
-					<% section.findAll(/aside:.+/).each { def aside -> %>
-					<aside class="p-0">
-						<% if (aside.name == 'longfish'){ %>
-						<header class="heading px-3">${aside.titleHtml}</header>
-						<div class="guide px-3">${aside.dfltHtml}</div>
-						<% } else if (aside.name == 'odamakio'){ %>
-						<div class="floatimg"><img src="${aside.src}" alt="ポートレート" width="150"></div>
-						<header class="heading px-3">${aside.titleHtml}</header>
-						<div class="guide px-3">${aside.dfltHtml}</div>
+					<% section.findAll(/article:.+/).each { def article -> %>
+					<article class="p-0">
+						<% if (article.name == 'longfish'){ %>
+						<header class="heading px-3">${article.titleHtml}</header>
+						<div class="guide px-3">${article.dfltHtml}</div>
+						<% } else if (article.name == 'odamakio'){ %>
+						<div class="floatimg"><img src="${article.src}" alt="ポートレート" width="150"></div>
+						<header class="heading px-3">${article.titleHtml}</header>
+						<div class="guide px-3">${article.dfltHtml}</div>
 						<% } else { %>
-						<div class="floatimg">${aside.amathum}</div>
-						<header class="heading px-3">${aside.anchor}</header>
-						<div class="guide px-3">${aside.dfltHtml}</div>
+						<div class="floatimg">${article.amathum}</div>
+						<header class="heading px-3">${article.anchor}</header>
+						<div class="guide px-3">${article.dfltHtml}</div>
 						<% } %>
-					</aside>
+					</article>
 					<% } %>
 				<% } %>
 				</div>

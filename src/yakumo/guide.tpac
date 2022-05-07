@@ -1,7 +1,7 @@
 #! draft
 #> guide サイト案内
 #>> section:site このサイトについて
-#>>> aside:longfish
+#>>> article:longfish
 #-title *the long fish*（ザ・ロングフィッシュ）
 小田牧央／杉本＠むにゅ10号がサイト管理者を務める個人サイトです。
 筆者の署名がない文章は、基本的にサイト管理者が記述しています。
@@ -11,7 +11,7 @@
 #>
 
 #>> section:master サイト管理者
-#>>> aside:odamakio
+#>>> article:odamakio
 #-title 小田牧央（おだ・まきお）
 #-src img/portrait.png
 1976年福井県生まれ。
@@ -25,7 +25,7 @@ Twitterでは平日に深夜アニメの感想を、
 #>
 
 #>> section:compub 商業出版
-#>>> aside:040312_cantor
+#>>> article:040312_cantor
 #-title カントールの楽園で
 #-href https://amzn.to/3kE1IXB
 #-logo @/draft/logos/logo:amazon
@@ -36,7 +36,7 @@ Twitterでは平日に深夜アニメの感想を、
 #-amathum <a href="https://www.amazon.co.jp/%E6%96%B0%E3%83%BB%E6%9C%AC%E6%A0%BC%E6%8E%A8%E7%90%86%E3%80%8804%E3%80%89%E8%B5%A4%E3%81%84%E9%A4%A8%E3%81%AE%E6%80%AA%E4%BA%BA%E7%89%A9-%E5%85%89%E6%96%87%E7%A4%BE%E6%96%87%E5%BA%AB-%E4%BA%8C%E9%9A%8E%E5%A0%82-%E9%BB%8E%E4%BA%BA/dp/4334736580?SubscriptionId=15V2PN3P15ET69D45D02&linkCode=li2&tag=longfish801-22&linkId=44ddbf7a90ddc5430c6ca1e85b53df39&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4334736580&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=longfish801-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=longfish801-22&language=ja_JP&l=li2&o=9&a=4334736580" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 #>
 
-#>>> aside:001101_mathematician
+#>>> article:001101_mathematician
 #-title 数学者からの報酬
 #-href https://amzn.to/3LQe9vA
 #-logo @/draft/logos/logo:amazon
@@ -46,7 +46,7 @@ Twitterでは平日に深夜アニメの感想を、
 #-amathum <a href="https://www.amazon.co.jp/%E5%BE%A1%E6%89%8B%E6%B4%97%E6%BD%94%E6%94%BB%E7%95%A5%E6%9C%AC-%E5%B3%B6%E7%94%B0-%E8%8D%98%E5%8F%B8/dp/4562033584?SubscriptionId=15V2PN3P15ET69D45D02&linkCode=li2&tag=longfish801-22&linkId=469543038b2681789028605755a5d505&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4562033584&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=longfish801-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=longfish801-22&language=ja_JP&l=li2&o=9&a=4562033584" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" />
 #>
 
-#>>> aside:970701_pierrot
+#>>> article:970701_pierrot
 #-title ピエロめざめよめざめよピエロ
 #-href https://amzn.to/3LP3CAB
 #-logo @/draft/logos/logo:amazon

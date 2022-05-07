@@ -28,8 +28,8 @@
 			handle["${prop}Text"] = StringEscapeUtils.escapeHtml4(handle[prop])
 		}
 		// コンテナのリンクを作成します
-		if (handle.tag == 'aside'){
-			handle.anchor = clmap.cl('/thtml/template#dflt').call('aside#anchor', [
+		if (handle.tag == 'article'){
+			handle.anchor = clmap.cl('/thtml/template#dflt').call('article#anchor', [
 				asset: handle,
 				logo: handle.logo?.refer()
 			])
@@ -40,6 +40,6 @@
 	binds = [ 'draft': appendMap.draft ]
 
 #> map:format
-#>> data:aside
+#>> data:article
 #-anchor
 <a href="${asset.href}">${asset.titleHtml}</a><% if (logo != null){ %> <a href="${logo.href}"><img src="${logo.src}" alt="${logo.altText}" class="logo" /></a><% } %>

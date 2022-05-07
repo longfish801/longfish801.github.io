@@ -2,7 +2,7 @@
 #> tab:selfpub 個人出版
 #-col 6
 #>> section:myscri ミステリ評論
-#>>> aside:reasoning
+#>>> article:reasoning
 #-title 探偵が推理を殺す
 #-href /pages/2019/191229_reasoning/
 #-logo @/draft/logos/logo:amazon
@@ -16,7 +16,7 @@
 #>
 
 #>> section:longnovel 創作小説
-#>>> aside:160814_hypergame
+#>>> article:160814_hypergame
 #-title ハィパァゲィム
 #-href /pages/2016/160814_hypergame/
 #-logo @/draft/logos/logo:amazon
@@ -30,7 +30,7 @@
 Amazon Kindleストアから刊行しました。
 #>
 
-#>>> aside:081027_iron
+#>>> article:081027_iron
 #-title 鉄錆風味歪夢 自選集
 #-href /pages/2008/081027_iron/
 #-logo @/draft/logos/logo:amazon
@@ -43,7 +43,7 @@ Amazon Kindleストアから刊行しました。
 #>
 
 #>> section:contribution 寄稿
-#>>> aside:081108_door
+#>>> article:081108_door
 #-title 扉
 #-href http://magazine.kairou.com/info/20081103.html
 #-src img/cover/081108_illcolle.jpg
@@ -52,7 +52,7 @@ Amazon Kindleストアから刊行しました。
 応募した三作品中、落選した二作品「デリー大災害の一夜」「その声は聞こえない」を【リンク：デデフラ：/ddfl/】に掲載しました。
 #>
 
-#>>> aside:080315_alone
+#>>> article:080315_alone
 #-title 寄る辺なさに
 #-href http://magazine.kairou.com/15/
 #-src img/cover/080315_kairou15.jpg
@@ -63,7 +63,7 @@ Amazon Kindleストアから刊行しました。
 分類するとすればホラー、雰囲気としては変格探偵小説が近いでしょう。
 #>
 
-#>>> aside:060224_missing
+#>>> article:060224_missing
 #-title ミッシング・アンダー・ザ・サン
 #-href http://d.hatena.ne.jp/helioterrorism/100511
 #-src img/cover/060224_helioterrorism3.jpg
@@ -74,7 +74,7 @@ Amazon Kindleストアから刊行しました。
 カクヨムにて公開しました。【リンク：「ミッシング・アンダー・ザ・サン」：https://kakuyomu.jp/works/1177354054888619515】を参照してください。
 #>
 
-#>>> aside:050514_abraxas
+#>>> article:050514_abraxas
 #-title アブラクサスの狭間
 #-href http://d.hatena.ne.jp/helioterrorism/100504
 #-src img/cover/050514_helioterrorism2.jpg

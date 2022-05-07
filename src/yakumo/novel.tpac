@@ -2,7 +2,7 @@
 #> tab:novel 創作小説
 #-col 6
 #>> section:shortstory 短編小説
-#>>> aside:200331_accomplice
+#>>> article:200331_accomplice
 #-title 悪い人になりたい
 #-href https://kakuyomu.jp/works/1177354054909537338
 #-logo @/draft/logos/logo:kakuyomu
@@ -16,7 +16,7 @@
 交換殺人を進化させた前代未聞の犯罪計画「共犯同盟」だった。
 #>
 
-#>>> aside:190224_missing
+#>>> article:190224_missing
 #-title ミッシング・アンダー・ザ・サン
 #-href https://kakuyomu.jp/works/1177354054888619515
 #-logo @/draft/logos/logo:kakuyomu
@@ -30,7 +30,7 @@
 同人誌『ヘリオテロリズム』Vol.3に寄稿した作品です。
 #>
 
-#>>> aside:190302_abraxas
+#>>> article:190302_abraxas
 #-title アブラクサスの狭間
 #-href https://kakuyomu.jp/works/1177354054888681404
 #-logo @/draft/logos/logo:kakuyomu
@@ -44,7 +44,7 @@
 同人誌『ヘリオテロリズム』Vol.2に寄稿した作品です。
 #>
 
-#>>> aside:060205_lowtech
+#>>> article:060205_lowtech
 #-title ローテク
 #-href /pages/2006/060205_lowtech/
 #-ccopy
@@ -56,7 +56,7 @@
 完全無欠なはずの論理を裏切った〈ローテク〉とは？
 #>
 
-#>>> aside:020206_fiftyyen
+#>>> article:020206_fiftyyen
 #-title ラストオーダー・ラストベット
 #-href /pages/2002/020206_fiftyyen/
 #-ccopy
@@ -68,7 +68,7 @@
 東京創元社の公募企画「五十円玉二十枚の謎」に挑戦した作品。
 #>
 
-#>>> aside:020202_cross
+#>>> article:020202_cross
 #-title 交錯密室
 #-href /pages/2002/020202_cross/
 #-ccopy
@@ -81,7 +81,7 @@
 犯人はいかにして交錯密室を作り上げたのか？
 #>
 
-#>>> aside:020102_oversky
+#>>> article:020102_oversky
 #-title 空の彼方の空の下で
 #-href /pages/2002/020102_oversky/
 #-ccopy
@@ -94,7 +94,7 @@
 倶楽星人の漠々は、ロケットを開発しグリ星へ渡航しようとするが。
 #>
 
-#>>> aside:000916_upsidedown
+#>>> article:000916_upsidedown
 #-title さかさま症候群
 #-href /pages/2000/000916_upsidedown/
 #-ccopy
@@ -105,7 +105,7 @@
 あらゆるものをさかさまに感じてしまう病に見舞われた男の数奇な体験談。
 #>
 
-#>>> aside:960404_blackjoke
+#>>> article:960404_blackjoke
 #-title ブラック・ジョーク・ボックス
 #-href /pages/1996/960404_blackjoke/
 #-ccopy
@@ -119,7 +119,7 @@
 #>
 
 #>> section:shortnovel 中編小説
-#>>> aside:090506_monochrome
+#>>> article:090506_monochrome
 #-title 玖乃杜モノクローム
 #-href /pages/2009/090506_monochrome/
 #-ccopy
@@ -135,7 +135,7 @@
 MYSCON10夜の部にて公開した犯人当て小説です。
 #>
 
-#>>> aside:070429_snowwhite
+#>>> article:070429_snowwhite
 #-title しらゆきひめ
 #-href /pages/2007/070429_snowwhite/
 #-ccopy
@@ -151,7 +151,7 @@ MYSCON10夜の部にて公開した犯人当て小説です。
 MYSCON8での企画のプロトタイプ版です。
 #>
 
-#>>> aside:000611_soulbody
+#>>> article:000611_soulbody
 #-title 四つの魂、三つの死体
 #-href /pages/2000/000611_soulbody/
 #-ccopy
@@ -165,7 +165,7 @@ MYSCON8での企画のプロトタイプ版です。
 #>
 
 #>> section:longnovel 長編小説
-#>>> aside:190406_morisumikon
+#>>> article:190406_morisumikon
 #-title 名探偵は、性別不明。
 #-href https://kakuyomu.jp/works/1177354054888771425
 #-logo @/draft/logos/logo:kakuyomu
