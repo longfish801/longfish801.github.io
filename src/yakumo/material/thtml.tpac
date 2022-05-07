@@ -1,0 +1,45 @@
+#! clmap:thtml
+
+#> map
+#>> dec
+	import org.apache.commons.text.StringEscapeUtils
+#>> args
+	String outKey
+	Map bltxtMap
+	Map appendMap
+#>> return
+	Map binds
+#>> closure
+	appendMap.draft.scan { def handle ->
+		// HTMLに変換します
+		['dflt', 'title', 'ccopy'].findAll {
+			handle.map.containsKey(it)
+		}.each { String prop ->
+			def bltxt = bltxtMap["${handle.path}#${prop}"]
+			def blnode = (handle.map[prop] instanceof List) ?
+				bltxt.root :
+				bltxt.root.find { it.xmlTag == 'line' }
+			handle["${prop}Html"] = clmap.cl('../htmlize#dflt').call(blnode)
+		}
+		// HTML上の特殊文字が含まれている可能性があるテキストをエスケープします
+		['title', 'alt'].findAll {
+			handle.map.containsKey(it)
+		}.each { String prop ->
+			handle["${prop}Text"] = StringEscapeUtils.escapeHtml4(handle[prop])
+		}
+		// コンテナのリンクを作成します
+		if (handle.tag == 'aside'){
+			handle.anchor = clmap.cl('/thtml/template#dflt').call('aside#anchor', [
+				asset: handle,
+				logo: handle.logo?.refer()
+			])
+		}
+	}
+	
+	// バインド変数のマップを作成します
+	binds = [ 'draft': appendMap.draft ]
+
+#> map:format
+#>> data:aside
+#-anchor
+<a href="${asset.href}">${asset.titleHtml}</a><% if (logo != null){ %> <a href="${logo.href}"><img src="${logo.src}" alt="${logo.altText}" class="logo" /></a><% } %>

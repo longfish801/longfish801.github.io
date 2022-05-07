@@ -1,0 +1,1572 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+	<style type="text/css">
+		<!--
+		body {
+			font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+			letter-spacing: 0.1rem;
+			line-height: 1.8rem;
+			text-align: justify;
+			word-wrap: break-word;
+			background-color: #FFCC00;
+			background-image: url(img/mat/bg.png);
+		}
+
+		header.row {
+			margin: 5rem auto;
+		}
+
+		h1 {
+			display: none;
+		}
+
+		h2 {
+			background-color: #00CCFF;
+			color: #ffffff;
+			border-radius: 15px;
+			letter-spacing: 1.3rem;
+			font-size: 1.7rem;
+			line-height: 2.3rem;
+			text-align: center;
+		}
+
+		aside {
+			background-image: url(img/mat/skel.gif);
+			border-left: 1px dashed #999999;
+			border-right: 1px dashed #999999;
+		}
+
+		header.heading {
+			background-image: url(img/mat/bg_header.png);
+			font-size: 1.3rem;
+			line-height: 2.3rem;
+		}
+
+		img.logo {
+			border-radius: 15px;
+			height: 2.2rem;
+		}
+
+		div.toc {
+			line-height: 2.5rem;
+		}
+
+		div.modal-header {
+			font-size: 1.3rem;
+			line-height: 2.3rem;
+			background-color: #FFCC66;
+			background-image: url(img/mat/bg.png);
+		}
+
+		div.modal-body,
+		div.modal-footer {
+			background-color: #FFCC00;
+			background-image: url(img/mat/bg.png);
+		}
+
+		div.meta {
+			text-align: right;
+			font-style: italic;
+			font-size: 0.8rem;
+			line-height: 1.2rem;
+			color: #999999;
+		}
+
+		div.ccopy {
+			background-image: url(img/mat/skel.gif);
+			font-size: 1.3rem;
+			line-height: 2.3rem;
+			color: #000000;
+		}
+
+		div.guide {
+			font-size: 1.0rem;
+			line-height: 1.8rem;
+		}
+
+		div.floatimg {
+			margin: 10px;
+			float: right;
+		}
+
+		#guideButton {
+			font-size: 1.3rem;
+			line-height: 2.3rem;
+		}
+		-->
+	</style>
+	<link rel="icon" href="favicon.ico" />
+	<title>*the long fish*</title>
+</head>
+
+<body class="container">
+
+	<!-- タイトル -->
+	<header class="row justify-content-center align-items-center p-3">
+		<div class="col-lg-4 text-end">
+			<h1>*the long fish*</h1>
+			<figure>
+				<img src="img/title.png" class="img-fluid" alt="*the long fish*" />
+			</figure>
+		</div>
+		<div class="col-lg-6">
+			<figure>
+				<img src="img/avatar.png" class="img-fluid" alt="ながいさかなちゃん" />
+			</figure>
+		</div>
+	</header><!-- end of row -->
+
+	<!-- ロゴ、サイト案内 -->
+	<nav class="row justify-content-center align-items-center my-3 p-3">
+		<nav class="col-lg-6 text-center">
+			
+			<a href="https://twitter.com/longfish801"><img src="img/logo/logo_twitter.png" alt="Twitter" class="logo" /></a>
+			
+			<a href="https://kakuyomu.jp/users/longfish801"><img src="img/logo/logo_kakuyomu.png" alt="カクヨム" class="logo" /></a>
+			
+			<a href="https://note.com/longfish801/"><img src="img/logo/logo_note.png" alt="note" class="logo" /></a>
+			
+			<a href="https://amzn.to/3Fhj06e"><img src="img/logo/logo_amazon.png" alt="Amazon" class="logo" /></a>
+			
+		</nav>
+		<nav class="col-lg-6 text-center p-3">
+			<button type="button" id="guideButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#guide">サイト案内</button>
+		</nav>
+	</nav><!-- end of row -->
+
+	<!-- バナー -->
+	<nav class="row justify-content-center my-5">
+		
+		<div class="col-lg-6">
+			<figure class="text-center">
+				<a href="/ddfl/"><img src="img/banner/ban_ddfr.png" class="img-fluid" alt="デデフラ"></a>
+			</figure>
+		</div>
+		
+		<div class="col-lg-6">
+			<figure class="text-center">
+				<a href="/pages/2019/191229_reasoning/"><img src="img/banner/ban_reasoning.png" class="img-fluid" alt="探偵が推理を殺す"></a>
+			</figure>
+		</div>
+		
+		<div class="col-lg-6">
+			<figure class="text-center">
+				<a href="/pages/2016/160814_hypergame/"><img src="img/banner/ban_hypergame.png" class="img-fluid" alt="ハィパァゲィム"></a>
+			</figure>
+		</div>
+		
+		<div class="col-lg-6">
+			<figure class="text-center">
+				<a href="/pages/2008/081027_iron/"><img src="img/banner/ban_iron.png" class="img-fluid" alt="鉄錆風味歪夢"></a>
+			</figure>
+		</div>
+		
+	</nav><!-- end of row -->
+
+	<!-- タブ -->
+	<nav class="row justify-content-center">
+		<div class="col-lg-12">
+			<ul class="nav nav-pills" id="tabs" role="tablist">
+				
+				<li class="nav-item" role="presentation"><button class="nav-link active" id="novel-tab"
+						data-bs-toggle="pill" data-bs-target="#novel" type="button" role="tab" aria-controls="novel"
+						aria-selected="true">創作小説</button></li>
+				
+				<li class="nav-item" role="presentation"><button class="nav-link" id="text-tab"
+						data-bs-toggle="pill" data-bs-target="#text" type="button" role="tab" aria-controls="text"
+						aria-selected="false">ザツブン</button></li>
+				
+				<li class="nav-item" role="presentation"><button class="nav-link" id="selfpub-tab"
+						data-bs-toggle="pill" data-bs-target="#selfpub" type="button" role="tab" aria-controls="selfpub"
+						aria-selected="false">個人出版</button></li>
+				
+			</ul>
+		</div>
+	</nav><!-- end of row -->
+
+	<main class="tab-content">
+		
+		<!-- 創作小説 -->
+		<section class="container tab-pane fade show active" id="novel" role="tabpanel" aria-labelledby="novel-tab">
+			<div class="row justify-content-center">
+				<!-- 目次リンク -->
+				<div class="toc col-lg-12 p-2">
+				
+					<a href="#shortstory" class="btn btn-light">＃短編小説</a>
+				
+					<a href="#shortnovel" class="btn btn-light">＃中編小説</a>
+				
+					<a href="#longnovel" class="btn btn-light">＃長編小説</a>
+				
+				</div>
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="shortstory">短編小説</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="https://kakuyomu.jp/works/1177354054909537338">悪い人になりたい</a> <a href="https://kakuyomu.jp/users/longfish801"><img src="img/logo/logo_kakuyomu.png" alt="カクヨム" class="logo" /></a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>ネットの良心が、私にささやいたんですよ。</p></div>
+					<div class="guide px-3 pt-2"><p>誰が書きこんだのか、国家権力であろうと身元を特定できない。<br/>
+匿名性が保証されたネット――ダークウェブ。<br/>
+その電子掲示板にて「導師」が呼びかけたのは、<br/>
+交換殺人を進化させた前代未聞の犯罪計画「共犯同盟」だった。</p></div>
+					<div class="meta px-3">2020.03.31公開 85枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="https://kakuyomu.jp/works/1177354054888619515">ミッシング・アンダー・ザ・サン</a> <a href="https://kakuyomu.jp/users/longfish801"><img src="img/logo/logo_kakuyomu.png" alt="カクヨム" class="logo" /></a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>ナンシー、僕が治るってどういうこと？</p></div>
+					<div class="guide px-3 pt-2"><p>マシュー・エステベス、十六歳。クラスメイトを殺害した少年は、新薬の被験者となった。<br/>
+薬のおかげで、前頭葉の働きを回復していくマシュー。理性的判断を取り戻したはずの少年は、しかし父親を殺めてしまう。あまつさえ、いくつかの奇妙な症状を呈し、廃人へと変貌していく。<br/>
+少年の脳になにが起きているのか？ 担当医のナンシーは、脳科学の世界的権威である父の助力を受ける。老科学者が語る、驚異の答えとは。<br/>
+同人誌『ヘリオテロリズム』Vol.3に寄稿した作品です。</p></div>
+					<div class="meta px-3">2019.02.24公開 57枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="https://kakuyomu.jp/works/1177354054888681404">アブラクサスの狭間</a> <a href="https://kakuyomu.jp/users/longfish801"><img src="img/logo/logo_kakuyomu.png" alt="カクヨム" class="logo" /></a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>二十世紀最後の幻視者が、一葉のモノクロ写真に封じこめた謎</p></div>
+					<div class="guide px-3 pt-2"><p>高校生の篠入桐花は、差出人不明の封筒を受けとる。そこには、一葉のモノクロ写真が収められていた。美しくも不穏な光景に記憶を喚起され、桐花は南へ向かう。<br/>
+かつて母が命を奪われ、父が失踪した海辺の土地。桐花はそこで、十六年前に起きたもうひとつの惨劇の真実を教えられる。<br/>
+二十世紀最後の幻視者と呼ばれた写真家は、己の信じる芸術のためになにを犯したのか。語りの省略とその解釈が輪唱し、ミステリと幻想が交錯する。<br/>
+同人誌『ヘリオテロリズム』Vol.2に寄稿した作品です。</p></div>
+					<div class="meta px-3">2019.03.03公開 53枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2006/060205_lowtech/">ローテク</a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>システムは人間が作ってるんです。</p></div>
+					<div class="guide px-3 pt-2"><p>セキュリティシステムを完備したオフィスビルでの殺人事件。<br/>
+入退室記録から、犯人は論理的に一人しかありえない。しかし――。<br/>
+完全無欠なはずの論理を裏切った〈ローテク〉とは？</p></div>
+					<div class="meta px-3">2006.02.05公開 89枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2002/020206_fiftyyen/">ラストオーダー・ラストベット</a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>今夜最後の賭をしてるのさ</p></div>
+					<div class="guide px-3 pt-2"><p>土曜日の夕方、書店に二十枚もの五十円玉を両替に来るのはなぜか？<br/>
+バーに集う男たちがアイデアを交わし合う。<br/>
+東京創元社の公募企画「五十円玉二十枚の謎」に挑戦した作品。</p></div>
+					<div class="meta px-3">2002.04.07公開 40枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2002/020202_cross/">交錯密室</a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>まるでダイアグラムに沿って列車運行するように、犯人は人を操ろうとした。</p></div>
+					<div class="guide px-3 pt-2"><p>山中の別荘に二つの密室。<br/>
+一方には手首を切断された女性の死体、他方には気を失った男性。<br/>
+部屋の鍵は互いの密室の中に、女性の手首は男性のポケットの中に。<br/>
+犯人はいかにして交錯密室を作り上げたのか？</p></div>
+					<div class="meta px-3">2002.02.02公開 65枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2002/020102_oversky/">空の彼方の空の下で</a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>なにが永遠の別れだ、ボクらはなにもあきらめてなんかない。</p></div>
+					<div class="guide px-3 pt-2"><p>ネットを通じて交流してきた兄弟星、グリと倶楽。<br/>
+しかし公転軌道の変化により、通信が不可能になる日を迎えようとしていた。<br/>
+「本当の理由は、君に会いに行くためだ」<br/>
+倶楽星人の漠々は、ロケットを開発しグリ星へ渡航しようとするが。</p></div>
+					<div class="meta px-3">2002.01.02公開 34枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2000/000916_upsidedown/">さかさま症候群</a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>君に別れを告げなければならない。それも、永遠に。</p></div>
+					<div class="guide px-3 pt-2"><p>就職浪人の僕は、ある日を境に感覚が狂ってゆく。落ちてゆくものが舞い上がっていくように見え、重力の感じ方が逆転する。初めは些細だった異常は日を追うごとに強くなり、日常生活さえ困難になっていく。<br/>
+あらゆるものをさかさまに感じてしまう病に見舞われた男の数奇な体験談。</p></div>
+					<div class="meta px-3">2000.09.16公開 20枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="/pages/1996/960404_blackjoke/">ブラック・ジョーク・ボックス</a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>パズルの虜、パズルの奴隷、パズル崇拝者&hellip;&hellip;なんとでも呼ぶがいい、だが彼が今俗世を越えた知の法悦境にいることだけは間違いない。</p></div>
+					<div class="guide px-3 pt-2"><p>決まった手順でなければ開けることのできない仕掛け箱。<br/>
+フトしたきっかけでアイデアを思い付いた谷川尚澄は、パズル創作家に挑戦する。<br/>
+悪気のないイタズラは、なぜか深刻な事態へ。<br/>
+仕掛け箱に込められた〈ブラック・ジョーク〉とは？</p></div>
+					<div class="meta px-3">1996.04.04公開 42枚/四百字詰</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="shortnovel">中編小説</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/090506_monochrome/">玖乃杜モノクローム</a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>みんなが君を疑っても、私は君を信じるだろう。<br/>
+だって、本当の犯人は私だから。</p></div>
+					<div class="guide px-3 pt-2"><p>県下有数の進学校、玖乃杜高校。<br/>
+新入生の花房律はクラスメートから奇妙な噂を聞く。<br/>
+この学校には伝説の&ldquo;美少女探偵&rdquo;がいるというのだ。<br/>
+一笑に付す花房だったが&hellip;&hellip;。<br/>
+誰かがなにかをたくらんでる。楽しく不穏な学園ミステリ。<br/>
+MYSCON10夜の部にて公開した犯人当て小説です。</p></div>
+					<div class="meta px-3">2009.05.06公開 180枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2007/070429_snowwhite/">しらゆきひめ</a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>ねえ、お願い、わかって。<br/>
+私達ができる精一杯のことって、ホントにちっぽけなことなんだよ？</p></div>
+					<div class="guide px-3 pt-2"><p>嵐の晩、山荘に集まったミステリファンたち。<br/>
+招かれざる客が訪れ、ひとりが姿を消す。<br/>
+犯人は世間を騒がせる連続殺人鬼〈メッセンジャー〉なのか。<br/>
+それとも、ここにいる誰かが？<br/>
+「新本格」に夢中だったすべての人に贈る犯人当て小説。<br/>
+MYSCON8での企画のプロトタイプ版です。</p></div>
+					<div class="meta px-3">2007.04.29公開 126枚/四百字詰</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2000/000611_soulbody/">四つの魂、三つの死体</a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>犯人が二重人格者ってのはどう？ 自分が別の人格のとき殺人をしているから、たとえ最後の一人になっても自分が犯人なのかわからないの。</p></div>
+					<div class="guide px-3 pt-2"><p>夜明けを迎えた青葉島に、三つの死体が残された。<br/>
+二重人格者に秘められた残虐な殺人者の魂が、二人を殺害し、遂には己の魂の器を、自殺という形で破壊せしめたのである。<br/>
+四つの魂が去り、そして青葉島には誰もいなくなった。<br/>
+犯人当て小説に偽装された犯人当てパズル。</p></div>
+					<div class="meta px-3">2000.06.11公開 174枚/四百字詰</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="longnovel">長編小説</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-6 p-0">
+					
+					<header class="heading px-3"><a href="https://kakuyomu.jp/works/1177354054888771425">名探偵は、性別不明。</a> <a href="https://kakuyomu.jp/users/longfish801"><img src="img/logo/logo_kakuyomu.png" alt="カクヨム" class="logo" /></a></header>
+					<div class="ccopy px-3 pt-3 pb-1"><p>その探偵は天使のように無垢で、悪魔のように美しい。</p></div>
+					<div class="guide px-3 pt-2"><p>「不公平ですよね。どうして世の中、目立つ人間と目立たない人間がいるんでしょう。ボクは目立たない顔に生まれたかったな」<br/>
+性別不明。黒髪ストレートロングのさらさらヘアーに色白美形。<br/>
+自然と人を苛立たせる自信過剰な口の利き方に、奇抜な服装センス。<br/>
+ありふれた地方都市で、素人探偵の森澄紺が関わる四つの事件を描く連作短編集。<br/>
+本作はMYSCON11にてミステリ作家の北山猛邦さんが提唱したシャーロイド「森澄紺」をプロデュースしています。</p></div>
+					<div class="meta px-3">2019.04.06公開 445枚/四百字詰</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+		</section>
+		
+		<!-- ザツブン -->
+		<section class="container tab-pane fade show" id="text" role="tabpanel" aria-labelledby="text-tab">
+			<div class="row justify-content-center">
+				<!-- 目次リンク -->
+				<div class="toc col-lg-12 p-2">
+				
+					<a href="#subcul" class="btn btn-light">＃サブカル感想</a>
+				
+					<a href="#reading" class="btn btn-light">＃読み物</a>
+				
+					<a href="#mystery" class="btn btn-light">＃ミステリ関連</a>
+				
+					<a href="#resume" class="btn btn-light">＃早引表／登場人物一覧</a>
+				
+					<a href="#reasoning" class="btn btn-light">＃ミステリ評論〈試供版〉</a>
+				
+					<a href="#fairplay" class="btn btn-light">＃犯人当て小説とフェアプレイ</a>
+				
+					<a href="#disptation" class="btn btn-light">＃論争まとめ記事</a>
+				
+					<a href="#mysdoku" class="btn btn-light">＃MYSDOKUレポート</a>
+				
+					<a href="#myscon" class="btn btn-light">＃MYSCONレポート</a>
+				
+					<a href="#mysconplus" class="btn btn-light">＃MYSCON関連</a>
+				
+					<a href="#report" class="btn btn-light">＃作家講演会／出版イベント</a>
+				
+					<a href="#digital" class="btn btn-light">＃資料</a>
+				
+				</div>
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="subcul">サブカル感想</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="https://note.com/longfish801/n/n6d76581f238f">虚しい夢が人を励ます――模造クリスタル「スターイーター」感想</a> <a href="https://note.com/longfish801/"><img src="img/logo/logo_note.png" alt="note" class="logo" /></a></header>
+					<div class="guide px-3"><p>模造クリスタル『スターイーター　模造クリスタル作品集』（イースト・プレス／2022年2月）の表題作についての感想です。<br/>
+あの感動的な、でも意味不明な手紙について、私なりの解釈を述べています。</p></div>
+					<div class="meta px-3">2022.03.28公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="https://note.com/longfish801/n/ne6601a1674e5">けれど、迷いはずっとある――平庫ワカ『マイ・ブロークン・マリコ』感想</a> <a href="https://note.com/longfish801/"><img src="img/logo/logo_note.png" alt="note" class="logo" /></a></header>
+					<div class="guide px-3"><p>平庫ワカ『マイ・ブロークン・マリコ』（BRIDGE COMICS／角川書店）の感想です。<br/>
+なぜシイノはマリコの死にここまで揺さぶられるのか。<br/>
+作品内の描写をたどってみると、意外なほどロジカルでした。</p></div>
+					<div class="meta px-3">2020.01.26公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2017/170109_yourname/">マジョリティの孤独――映画『君の名は。』感想</a></header>
+					<div class="guide px-3"><p>映画『君の名は。』（新海誠監督／2016年8月公開）の感想です。<br/>
+あの複雑な物語展開の辻褄はどうなっているのか考えてみました。</p></div>
+					<div class="meta px-3">2017.01.09公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2015/150720_darklove/">愛情から生まれる闇――映画『バケモノの子』感想</a></header>
+					<div class="guide px-3"><p>映画『バケモノの子』（細田守監督／2015年7月公開）の感想です。<br/>
+人の心に宿る闇とはなにかという疑問からスタートして、作品タイトルの意味について考察しています。</p></div>
+					<div class="meta px-3">2015.07.20公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2015/150413_persuasiongame/">説得ゲームと物語の奇跡について――ＴＶアニメ『SHIROBAKO』感想</a></header>
+					<div class="guide px-3"><p>ＴＶアニメ『SHIROBAKO』（水島努監督／P.A.WORKS制作／2014年10月～翌年3月放映）の感想です。<br/>
+戯画的な演出が作品のテーマにどうつながっているのか考察しました。</p></div>
+					<div class="meta px-3">2015.04.13公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2014/141222_whynotear/">なぜ父は涙を流さなかったのか――映画『インターステラー』感想</a></header>
+					<div class="guide px-3"><p>映画『インターステラー』（クリストファー・ノーラン監督／2014年日本公開）の感想です。<br/>
+終盤の場面に抱いた違和感を手掛かりとして作品のテーマについて考えました。</p></div>
+					<div class="meta px-3">2014.12.22公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2012/120423_sakurada2/">伝わらないよりはずっといい――〈サクラダリセット〉シリーズ感想</a></header>
+					<div class="guide px-3"><p>河野裕〈サクラダリセット〉シリーズの、主に５巻以降の感想です。<br/>
+<a href="/pages/2011/110109_sakurada/">これからの「サクラダリセット」の話をしよう</a>の補遺です。</p></div>
+					<div class="meta px-3">2012.04.23公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2012/120408_nervousgirls/">少女たちの不安と仲良しの行方――ＴＶアニメ『ブラック★ロックシューター』感想</a></header>
+					<div class="guide px-3"><p>ＴＶアニメ『ブラック★ロックシューター』（監督 吉岡忍／シリーズ構成・脚本 岡田麿里／2012年2月～3月放映）の感想です。<br/>
+個人的には、時代の節目を象徴するような作品のひとつだったと思っています。</p></div>
+					<div class="meta px-3">2012.04.08公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110501_nohopestory/">誰も物語を信じない――「魔法少女まどか☆マギカ」感想</a></header>
+					<div class="guide px-3"><p>アニメ『魔法少女まどか☆マギカ』（監督 新房昭之／2011年1月～4月放映）の感想です。<br/>
+あのようなラストがなぜ可能になるのか物語の構造について考えてみました。</p></div>
+					<div class="meta px-3">2011.05.01公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110109_sakurada/">これからの「サクラダリセット」の話をしよう</a></header>
+					<div class="guide px-3"><p>河野裕『サクラダリセット１』～『サクラダリセット４』の感想です。<br/>
+マイケル・サンデル『これからの「正義」の話をしよう』と比べています。<br/>
+いわば、正義の在り方の違いを巡るハーヴァード大学教授とライトノベル作家の思想対決です。</p></div>
+					<div class="meta px-3">2011.01.09公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/100920_spaceyui/">平沢唯の空間――「けいおん!!」最終回感想</a></header>
+					<div class="guide px-3"><p>ＴＶアニメ『けいおん！』『けいおん！！』の感想です。<br/>
+平沢唯はどんな人物だったのか、作品中のさまざまな断片から浮き彫りにすることを試みています。<br/>
+あと、面白いショートパロディもあります。</p></div>
+					<div class="meta px-3">2010.09.20公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/100719_nausicaajustice/">ナウシカがたどりついた正義――『風の谷のナウシカ』感想</a></header>
+					<div class="guide px-3"><p>宮崎駿『風の谷のナウシカ』の感想です。映画ではなく、アニメ情報誌『アニメージュ』に連載された漫画作品のほうです。<br/>
+ナウシカとヴ王の道化が交わす謎めいた対話にはどんな背景があったのか、物語展開をふりかえっています。</p></div>
+					<div class="meta px-3">2010.07.19公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/100627_worldorboku/">救うべきはセカイか、それともボクか――「Angel Beats!」感想</a></header>
+					<div class="guide px-3"><p>ＴＶアニメ『Angel Beats!』（岸誠二監督／P.A.WORKS制作／2010年4月～6月放映）の感想です。<br/>
+音無の行動目的がどんどん変わっていくことを踏まえて物語をふりかえってみました。</p></div>
+					<div class="meta px-3">2010.06.27公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/090815_seacat/">「うみねこのなく頃に」整理ノート</a></header>
+					<div class="guide px-3"><p>07th Expansion「うみねこのなく頃に」について、どのような謎が提示されているか整理しました。<br/>
+私なりの考察もしています。</p></div>
+					<div class="meta px-3">2009.08.15公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/090705_thirdviolence/">第三の暴力――『HELLSING』感想</a></header>
+					<div class="guide px-3"><p>平野耕太『HELLSING』の感想です。<br/>
+最終巻でのインテグラのセリフをふりだしに、この物語のテーマについて考察しました。</p></div>
+					<div class="meta px-3">2009.07.05公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/090329_wholost/">『涼宮ハルヒの消失』の消失</a></header>
+					<div class="guide px-3"><p>谷川流『涼宮ハルヒの消失』をベースとしたパロディ小説です。<br/>
+この物語の背後にあったかもしれないＩＦの物語を綴っています。<br/>
+超能力者が理屈っぽい話を延々と語っているのでご注意ください。</p></div>
+					<div class="meta px-3">2009.03.29公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2005/050710_wtc/">「ひぐらしのなく頃に」完全解明に挑む</a></header>
+					<div class="guide px-3"><p>07th Expansion「ひぐらしのなく頃に」について、どのような謎が提示されているか整理しました。<br/>
+私なりの考察もしています。</p></div>
+					<div class="meta px-3">2005.07.10公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2003/031102_suzumiya/">幻想小説の系譜から読む『涼宮ハルヒの憂鬱』</a></header>
+					<div class="guide px-3"><p>谷川流『涼宮ハルヒの憂鬱』の感想です。<br/>
+ツヴェタン・トドロフ『幻想文学論序説』を下敷きに、幻想小説としての『涼宮ハルヒの憂鬱』について検証しました。</p></div>
+					<div class="meta px-3">2003.11.02公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="reading">読み物</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2013/130225_fictionalright/">新しい生に必要なのは虚構権なのか？ ――藤田直哉『虚構内存在　筒井康隆と〈新しい《生》の次元〉』感想</a></header>
+					<div class="guide px-3"><p>藤田直哉『虚構内存在』についての紹介ならびに感想です。</p></div>
+					<div class="meta px-3">2013.02.25公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2008/080927_itandjapan/">パソコンは日本文化をどう変えたか</a></header>
+					<div class="guide px-3"><p>YOMIURI PC 編集部『パソコンは日本語をどう変えたか』を読んで、つらつら思ったことを綴りました。</p></div>
+					<div class="meta px-3">2008.09.27公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="mystery">ミステリ関連</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2021/211231_specialreal/">特殊設定という名のリアル</a></header>
+					<div class="guide px-3"><p>2021年に流行した「特殊設定ミステリ」という言葉について自分なりに整理しました。</p></div>
+					<div class="meta px-3">2021.12.31公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2014/140420_kawaramati/">円居挽『河原町ルヴォワール』双龍会詳読</a></header>
+					<div class="guide px-3"><p>円居挽『河原町ルヴォワール』の双龍会でのやりとりを整理し、ちょっとした考察を足しました。</p></div>
+					<div class="meta px-3">2014.04.20公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2012/120826_byeshinhonkaku/">新本格よ、さらば ――『21世紀探偵小説』感想</a></header>
+					<div class="guide px-3"><p>限界研［編］『21世紀探偵小説　ポスト新本格と論理の崩壊』を読んで感じたことを整理しました。<br/>
+国内本格ミステリは本当に衰退期なのか、それはどんなことを意味するのか綴っています。</p></div>
+					<div class="meta px-3">2012.08.26公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/100404_another/">綾辻行人『Another』早引表</a></header>
+					<div class="guide px-3"><p>綾辻行人『Another』の早引表に加えて、幻想小説、キャラクター小説としての側面について考えを綴りました。</p></div>
+					<div class="meta px-3">2010.04.04公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/100317_zeromys/">ゼロ年代ライトノベル系ミステリ注目作品リスト</a></header>
+					<div class="guide px-3"><p>ゼロ年代（2000～2009）に出版された、ライトノベル系ミステリ小説（いわゆるライトノベルレーベルで刊行されたミステリや、アニメ・まんがの影響を深く受けていると思われる作品）のリストです。</p></div>
+					<div class="meta px-3">2010.03.17公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2008/080802_mysterious10/">ミステリの固定観念を崩す10冊</a></header>
+					<div class="guide px-3"><p>普段ミステリ読まない人に「え？こんなのもミステリ？」とびっくりさせるための作品リストです。</p></div>
+					<div class="meta px-3">2008.08.02公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2007/070415_doubleq/">Ｑの変奏</a></header>
+					<div class="guide px-3"><p>夢野久作『ドグラ・マグラ』を中心にミステリの多様性について論じました。</p></div>
+					<div class="meta px-3">2007.04.15公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2006/060424_door/">碓氷優佳の妄想と推理</a></header>
+					<div class="guide px-3"><p>石持浅海『扉は閉ざされたまま』について別解を推理してみました。<br/>
+MYSCON7の読書会をきっかけに書いた文章です。</p></div>
+					<div class="meta px-3">2006.04.24公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2005/051225_suspectx/">Ｘの献身が報われるとき</a></header>
+					<div class="guide px-3"><p>東野圭吾『容疑者Ｘの献身』についての感想です。<br/>
+本格ミステリか否かについての判断も綴っています。</p></div>
+					<div class="meta px-3">2005.12.25公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2005/051224_godtruth/">神様ゲームの勝者は誰だったのか？</a></header>
+					<div class="guide px-3"><p>麻耶雄嵩『神様ゲーム』についての感想です。<br/>
+あの衝撃的なラストについて考えを巡らせました。</p></div>
+					<div class="meta px-3">2005.12.24公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2005/050413_firefly/">蛍の旋律に我々は如何にして幻惑されたか</a></header>
+					<div class="guide px-3"><p>麻耶雄嵩『螢』についての考察です。<br/>
+MYSCON6の読書会に持参したカウンターレジュメも載せています。</p></div>
+					<div class="meta px-3">2005.04.13公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2004/040315_screw/">眩暈的幻想、ネジ式フィクション</a></header>
+					<div class="guide px-3"><p>島田荘司『眩暈』と『ネジ式ザゼツキー』を比較しています。<br/>
+絵空事としか思えないことが起きるのは似ていますが、幻想の扱い方が正反対という話です。<br/>
+MYSCON5の読書会にてゲリラ配布しました。</p></div>
+					<div class="meta px-3">2004.03.15公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2003/030318_fukui/">あなたの古里に、名探偵はいますか？</a></header>
+					<div class="guide px-3"><p>安田輝雄［編］『福井県名探偵実話集』の紹介です。</p></div>
+					<div class="meta px-3">2003.03.23公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="resume">早引表／登場人物一覧</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2017/170610_honestman/">白井智之『東京結合人間』早引表</a></header>
+					
+					<div class="meta px-3">2017.06.10公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2015/150614_perspective/">長沢樹『夏服パースペクティヴ』早引表</a></header>
+					
+					<div class="meta px-3">2015.06.14公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2014/140621_recursible/">米澤穂信『リカーシブル』早引表</a></header>
+					
+					<div class="meta px-3">2014.06.21公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2013/130721_hankinren/">山田風太郎『妖異金瓶梅』登場人物一覧</a></header>
+					
+					<div class="meta px-3">2013.07.21公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2013/130615_king/">法月綸太郎『キングを探せ』早引表</a></header>
+					
+					<div class="meta px-3">2013.06.15公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2012/120805_tragedyW/">古野まほろ『命に三つの鐘が鳴る』早引表</a></header>
+					
+					<div class="meta px-3">2012.08.05公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2012/120805_keel/">米澤穂信『折れた竜骨』早引表</a></header>
+					
+					<div class="meta px-3">2012.08.05公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110529_albatross/">七河迦南『アルバトロスは羽ばたかない』早引表</a></header>
+					
+					<div class="meta px-3">2011.05.29公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110429_inthebox/">竹本健治『匣の中の失楽』早引表</a></header>
+					
+					<div class="meta px-3">2011.04.29公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110305_revoir/">円居挽『丸太町ルヴォワール』早引表</a></header>
+					
+					<div class="meta px-3">2011.03.05公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/101024_incitemill/">米澤穂信『インシテミル』早引表</a></header>
+					
+					<div class="meta px-3">2010.10.24公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/111016_karasuma/">円居挽『烏丸ルヴォワール』第二章詳読</a></header>
+					
+					<div class="meta px-3">2011.10.16公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/100904_sonaten/">麻耶雄嵩『夏と冬の奏鳴曲』早引表</a></header>
+					
+					<div class="meta px-3">2010.09.04公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="reasoning">ミステリ評論〈試供版〉</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2017/170805_violence/">暴力と生の狭間で〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第12号に寄せた文章の試供版です。<br/>
+暴力をテーマに白井智之『東京結合人間』について精読しました。</p></div>
+					<div class="meta px-3">2017.07.30公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2016/161112_casual/">本格とカジュアルとの距離〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第11号に寄せた文章の試供版です。<br/>
+ライト文芸の隆盛がミステリとどのような関係にあり、本格ミステリにどのような影響を与えているのか、状況を論じています。<br/>
+主に三上延、初野晴、井上真偽、東川篤哉、織守きょうや、北山猛邦、麻耶雄嵩、米澤穂信、瀬川コウ、森川智喜、皆藤黒助、久住四季の作品に触れています。</p></div>
+					<div class="meta px-3">2016.11.12公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2015/150808_monsterlove/">怪物の愛〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第10号に寄せた文章の試供版です。<br/>
+現代の本格ミステリにおいて、心理を描くことが謎解きとどのように結びつくのか長沢樹『夏服パースペクティヴ』の読解を中心に探ります。</p></div>
+					<div class="meta px-3">2015.08.08公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2014/140810_lullaby/">目覚めのための子守歌――&ldquo;伊藤計劃以後&rdquo;として読む米澤穂信〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第９号に寄せた文章の試供版です。<br/>
+米澤穂信『リカーシブル』に描かれた多元的な世界観を手がかりとして、国内本格ミステリシーンとゼロ年代後半からの文化状況との共振について概観します。</p></div>
+					<div class="meta px-3">2014.08.10公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2013/130728_bigdata/">探偵が推理を殺す〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第８号に寄せた文章の試供版です。<br/>
+知の手法のパラダイムシフトと共に、現代の本格ミステリは環境依存性の高い問題解決手法を手探りすることで新しい名探偵像を模索しつつあることを法月綸太郎『キングを探せ』を通じて解説します。</p></div>
+					<div class="meta px-3">2013.07.28公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2012/120729_killed/">推理が探偵を殺す〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第７号に寄せた文章の試供版です。<br/>
+全知全能の空想ヒーローではなく現実的な問題解決のエキスパートへ、ゼロ年代後半から顕著になりつつある名探偵像の変容とそこから生じる問題を、名探偵の政治的な態度をキーワードとして浮き彫りにします。<br/>
+有栖川有栖「モロッコ水晶の謎」『乱鴉の島』『女王国の城』『闇の喇叭』『真夜中の探偵』、米澤穂信『折れた竜骨』、古野まほろ『命に三つの鐘が鳴る』について読み解いています。</p></div>
+					<div class="meta px-3">2012.07.29公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110806_game/">ゲーム系ミステリの思想〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第６号に寄せた文章の試供版です。<br/>
+07th Expansion制作『うみねこのなく頃に』がミステリ作品としてどのような歴史的経緯を受け継ぎ、どのような同時代性を帯びているか、垂直方向と水平方向の座標を示します。<br/>
+併せて土橋真二郎『殺戮ゲームの館』、七河迦南『アルバトロスは羽ばたかない』にも触れています。</p></div>
+					<div class="meta px-3">2011.08.06公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110806_fantasique/">奇想の現在〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第６号に寄せた文章の試供版です。<br/>
+八〇年代後半から現代まで、島田荘司の本格ミステリー論を中心に、ミステリにおける幻想概念の変化を論じます。<br/>
+山口芳宏『妖精島の殺人』『学園島の殺人』について紹介しています。</p></div>
+					<div class="meta px-3">2011.08.06公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/100731_choice/">虚ろの騎士と状況の檻――ゼロ年代本格ミステリからセカイ系への応答〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第５号に寄せた文章の試供版です。<br/>
+九〇年代後半から現代にかけて、社会状況の大きな変化が「セカイ系」と呼ばれる作品群を生みだしました。現代の国内本格ミステリがセカイ系から受けた影響とその応答について詳述します。<br/>
+東野圭吾『容疑者Ｘの献身』／クリストファー・ノーラン監督『ダークナイト』／綾辻行人『Another』／相沢沙呼『午前零時のサンドリヨン』／似鳥鶏『さよならの次にくる』／円居挽『丸太町ルヴォワール』について触れています。</p></div>
+					<div class="meta px-3">2010.07.31公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/090808_strategy/">探偵達の新戦略〈試供版〉</a></header>
+					<div class="guide px-3"><p>探偵小説研究会の機関誌『CRITICA』第４号に掲載された文章の試供版です。<br/>
+07th Expansion『ひぐらしのなく頃に』／谷川流『涼宮ハルヒの消失』／米澤穂信『夏期限定トロピカルパフェ事件』を論じています。<br/>
+二〇〇九年度の探偵小説評論賞に応募し、奨励作を受賞しました。</p></div>
+					<div class="meta px-3">2009.08.08公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="fairplay">犯人当て小説とフェアプレイ</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2005/050508_fareplay3/">犯人当て小説におけるフェアプレイについて</a></header>
+					
+					<div class="meta px-3">2005.05.08公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2000/000211_fairplay2/">犯人当て小説のためのフェア・プレイ変換の提案について：補足資料</a></header>
+					
+					<div class="meta px-3">2000.01.15公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2000/000115_fairplay/">犯人当て小説のためのフェア・プレイ変換の提案について</a></header>
+					
+					<div class="meta px-3">2000.02.11公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="disptation">論争まとめ記事</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110310_fareplay4/">ギリシア棺論争発掘録</a></header>
+					<div class="guide px-3"><p>エラリー・クイーン『ギリシア棺の謎』の評価を巡り1993年から2001年にかけて主に法月綸太郎、笠井潔、飯城勇三の三氏がくりひろげた論争についてまとめました。</p></div>
+					<div class="meta px-3">2011.04.10公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2006/061009_devotion/">Ｘ論争黙示録</a></header>
+					<div class="guide px-3"><p>2005年に刊行された東野圭吾『容疑者Ｘの献身』は本格ミステリか否かという問いに端を欲する論争について、主に『ミステリマガジン』誌上の討論内容を中心にまとめました。</p></div>
+					<div class="meta px-3">2006.10.09公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="mysdoku">MYSDOKUレポート</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2016/160116_mysdoku18/">MYSDOKU18レポート 多島斗志之『黒百合』</a></header>
+					
+					<div class="meta px-3">2016.01.16公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2015/151121_mysdoku17/">MYSDOKU17レポート 三津田信三『首無の如き祟るもの』</a></header>
+					
+					<div class="meta px-3">2015.11.21公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2015/150726_mysdoku16/">MYSDOKU16レポート 久住四季『星読島に星は流れた』</a></header>
+					
+					<div class="meta px-3">2015.07.26公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2014/141230_mysdoku15/">MYSDOKU15レポート 連城三紀彦『夜よ鼠たちのために』</a></header>
+					
+					<div class="meta px-3">2014.12.30公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2014/140809_mysdoku13/">MYSDOKU13レポート 十市社『ゴースト&ne;ノイズ（リダクション）』</a></header>
+					
+					<div class="meta px-3">2014.08.09公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2014/140412_mysdoku12/">MYSDOKU12レポート 法月綸太郎『ノックス・マシン』</a></header>
+					
+					<div class="meta px-3">2014.04.12公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2013/131130_mysdoku10/">MYSDOKU10レポート 北山猛邦『猫柳十一弦の後悔　不可能犯罪定数』『猫柳十一弦の失敗　探偵助手五箇条』</a></header>
+					
+					<div class="meta px-3">2013.11.30公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2013/130407_mysdoku8/">MYSDOKU8レポート 宮内悠介『盤上の夜』</a></header>
+					
+					<div class="meta px-3">2013.04.07公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2012/121223_mysdoku7/">MYSDOKU7レポート 七河迦南『空耳の森』</a></header>
+					
+					<div class="meta px-3">2012.12.30公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110810_mysdoku6/">MYSDOKU6レポート 高井忍『柳生十兵衛秘剣考』</a></header>
+					
+					<div class="meta px-3">2011.08.10公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/101114_mysdoku4/">MYSDOKU4レポート 梓崎優『叫びと祈り』</a></header>
+					
+					<div class="meta px-3">2010.11.14公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/100425_mysdoku3/">MYSDOKU3レポート 島田荘司『斜め屋敷の犯罪』</a></header>
+					
+					<div class="meta px-3">2010.04.25公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/090928_mysdoku2/">MYSDOKU2レポート 初野晴『1/2の騎士 ～harujion～』</a></header>
+					
+					<div class="meta px-3">2009.09.28公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/090720_mysdoku1/">MYSDOKU1レポート 米澤穂信『秋期限定栗きんとん事件』</a></header>
+					
+					<div class="meta px-3">2009.07.20公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="myscon">MYSCONレポート</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2014/141220_myscon12/">MYSCON12レポート 森川別館はくらりが占拠したニャ</a></header>
+					
+					<div class="meta px-3">2014.12.20公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2013/130721_myscon11/">MYSCON11レポート 「駆逐してやる！ 一匹残らず！」とゑんじさんは云った</a></header>
+					
+					<div class="meta px-3">2013.07.21公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/090621_myscon10/">MYSCON10レポート 浅暮先生に敬礼！</a></header>
+					
+					<div class="meta px-3">2009.06.21公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2008/080427_myscon9/">MYSCON9レポート みんな新本格が大好きです</a></header>
+					
+					<div class="meta px-3">2008.04.27公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2007/070424_myscon8/">MYSCON8レポート ずっと反省してましたトホホ</a></header>
+					
+					<div class="meta px-3">2007.04.24公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2006/060424_myscon7/">MYSCON7レポート ダ・ヴィンチ・コードより四大奇書な私達の行き着く先は</a></header>
+					
+					<div class="meta px-3">2006.04.24公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2005/050413_myscon6/">MYSCON6レポート フェアプレイから極楽浄土まで多様化するミステリとボクらの共通認識</a></header>
+					
+					<div class="meta px-3">2005.04.13公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2004/040315_myscon5/">MYSCON5レポート 小一時間問い詰められましたトホホ</a></header>
+					
+					<div class="meta px-3">2004.03.15公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2003/030316_myscon4/">MYSCON4レポート 探偵講談から萌え談義までミステリ花盛り</a></header>
+					
+					<div class="meta px-3">2003.03.23公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2002/020401_myscon3/">MYSCON3レポート 日本のミステリのために私達が今できること(？)</a></header>
+					
+					<div class="meta px-3">2002.04.01公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="mysconplus">MYSCON関連</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2008/080706_mysrec2008/">MYSREC2008 in Tokyoレポ</a></header>
+					<div class="guide px-3"><p>MYSREC2008の参加レポートです。</p></div>
+					<div class="meta px-3">2008.07.06公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2007/070429_wgm8repo/">MYSCON8犯人当て企画「ザ・ラスト・トリック」始末書</a></header>
+					<div class="guide px-3"><p>MYSCON8犯人当て企画の裏話と反省会です。</p></div>
+					<div class="meta px-3">2007.04.29公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2004/040315_light/">ライトノベルと本格ミステリ読者達のためのハイブリッドパズルストーリー</a></header>
+					<div class="guide px-3"><p>MYSCON5深夜の濃ゆい議論をまとめました。</p></div>
+					<div class="meta px-3">2004.03.15公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2003/030321_cultural/">本格ミステリ伝説</a></header>
+					<div class="guide px-3"><p>MYSCON4深夜の濃ゆい議論をまとめました。</p></div>
+					<div class="meta px-3">2003.03.23公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="report">作家講演会／出版イベント</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/111127_repo311ghost/">「３・１１&times;ゴーストの未来」トークイベント無気力レポート</a></header>
+					
+					<div class="meta px-3">2011.11.27公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/111113_repo311world/">「笠井潔講演会 ～３．１１とセカイ系～」お茶目レポート</a></header>
+					
+					<div class="meta px-3">2011.11.13公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2011/110320_subculwars2/">『サブカルチャー戦争』刊行記念イベント第二弾「ポスト9.11のハリウッド映画と日本映画」記憶捏造レポート</a></header>
+					
+					<div class="meta px-3">2011.03.20公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2010/101219_subculwars1/">『サブカルチャー戦争』刊行記念トークショー不正確レポート</a></header>
+					
+					<div class="meta px-3">2010.12.19公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/090809_nosociety/">『社会は存在しない』刊行記念トークイベント疑似レポート</a></header>
+					
+					<div class="meta px-3">2009.08.09公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2009/091112_princerepo/">北山猛邦講演会レポート</a></header>
+					
+					<div class="meta px-3">2009.11.12公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2008/081103_noririnrepo/">法月綸太郎講演会</a></header>
+					
+					<div class="meta px-3">2008.11.03公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2005/051106_mayarepo/">麻耶雄嵩講演会レポ</a></header>
+					
+					<div class="meta px-3">2005.11.06公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="digital">資料</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/maven/">maven</a></header>
+					<div class="guide px-3"><p>io.github.longfish801のmavenです。</p></div>
+					<div class="meta px-3">2022.05.07公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-4 p-0">
+					
+					<header class="heading px-3"><a href="/pages/2008/081124_novelbook/">LaTeXで小説同人誌を作る</a></header>
+					<div class="guide px-3"><p>LaTeXで縦書き小説同人誌を作るためのサンプルです。</p></div>
+					<div class="meta px-3">2008.11.24公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+		</section>
+		
+		<!-- 個人出版 -->
+		<section class="container tab-pane fade show" id="selfpub" role="tabpanel" aria-labelledby="selfpub-tab">
+			<div class="row justify-content-center">
+				<!-- 目次リンク -->
+				<div class="toc col-lg-12 p-2">
+				
+					<a href="#myscri" class="btn btn-light">＃ミステリ評論</a>
+				
+					<a href="#longnovel" class="btn btn-light">＃創作小説</a>
+				
+					<a href="#contribution" class="btn btn-light">＃寄稿</a>
+				
+				</div>
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="myscri">ミステリ評論</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-6 p-0">
+					
+					<div class="floatimg"><a href="/pages/2019/191229_reasoning/"><img src="img/cover/191228_reasoning.png" alt="探偵が推理を殺す" width="150"></a></div>
+					<header class="heading px-3"><a href="/pages/2019/191229_reasoning/">探偵が推理を殺す</a> <a href="https://amzn.to/3Fhj06e"><img src="img/logo/logo_amazon.png" alt="Amazon" class="logo" /></a></header>
+					<div class="guide px-3"><p>&ldquo;終焉&rdquo;そして&ldquo;衰退期&rdquo;。<br/>
+かつて、そう烙印を捺された本格ミステリはその後どうなったか。<br/>
+東野圭吾『容疑者Ｘの献身』（二〇〇五年）から今村昌弘『屍人荘の殺人』（二〇一七年）まで、平成後期の国内本格ミステリの動向を総括し、令和本格の進むべき道を探る。<br/>
+探偵小説研究会の機関誌『CRITICA』第５号から第12号にかけて寄せたミステリ評論に加筆修正し、Amazon Kindleストアから刊行しました。<br/>
+書き下ろしの序論および結論を公開しています。</p></div>
+					<div class="meta px-3">2019.12.28公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="longnovel">創作小説</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-6 p-0">
+					
+					<div class="floatimg"><a href="/pages/2016/160814_hypergame/"><img src="img/cover/160814_hypergame.png" alt="ハィパァゲィム" width="150"></a></div>
+					<header class="heading px-3"><a href="/pages/2016/160814_hypergame/">ハィパァゲィム</a> <a href="https://amzn.to/3Fhj06e"><img src="img/logo/logo_amazon.png" alt="Amazon" class="logo" /></a></header>
+					<div class="guide px-3"><p>ちょっとせつない、ラブコメ風味の学園ミステリです。<br/>
+一人の女子高生が、雪の日に廃墟から飛び降り自殺をします。<br/>
+なぜ、死を選んでしまったのか？<br/>
+学園ミステリならば当然、高校生たちが真相を探ろうとするはずですが、思いがけない方向へ物語は進みます。<br/>
+青春ミステリとしては捻じれに捻じれた世界観の下、いわば〈幸福論バトルロイヤル〉がくりひろげられます。<br/>
+Amazon Kindleストアから刊行しました。</p></div>
+					<div class="meta px-3">2016.08.14公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<div class="floatimg"><a href="/pages/2008/081027_iron/"><img src="img/cover/081027_iron.jpg" alt="鉄錆風味歪夢 自選集" width="150"></a></div>
+					<header class="heading px-3"><a href="/pages/2008/081027_iron/">鉄錆風味歪夢 自選集</a> <a href="https://amzn.to/3Fhj06e"><img src="img/logo/logo_amazon.png" alt="Amazon" class="logo" /></a></header>
+					<div class="guide px-3"><p>夢野久作に捧げる、恐怖と幻想を主題にした掌編集です。<br/>
+恐怖色の強い作品を集めた〈猟奇編〉と、幻想味のある作品を選んだ〈寂滅編〉の二冊があります。<br/>
+また〈寂滅編〉には短編小説「熱病」を併録します。<br/>
+Amazon Kindleストアから刊行しました。</p></div>
+					<div class="meta px-3">2016.08.14公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="contribution">寄稿</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				
+				<aside class="col-lg-6 p-0">
+					
+					<div class="floatimg"><a href="http://magazine.kairou.com/info/20081103.html"><img src="img/cover/081108_illcolle.jpg" alt="扉" width="150"></a></div>
+					<header class="heading px-3"><a href="http://magazine.kairou.com/info/20081103.html">扉</a></header>
+					<div class="guide px-3"><p>秋山真琴編集長の<a href="http://magazine.kairou.com/info/20081103.html">回廊文庫第一弾『幻視コレクション～新しい現実の誕生～』</a>に採用された超短編です。<br/>
+応募した三作品中、落選した二作品「デリー大災害の一夜」「その声は聞こえない」を<a href="/ddfl/">デデフラ</a>に掲載しました。</p></div>
+					<div class="meta px-3">2008.11.08公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<div class="floatimg"><a href="http://magazine.kairou.com/15/"><img src="img/cover/080315_kairou15.jpg" alt="寄る辺なさに" width="150"></a></div>
+					<header class="heading px-3"><a href="http://magazine.kairou.com/15/">寄る辺なさに</a></header>
+					<div class="guide px-3"><p>秋山真琴編集長の<a href="http://magazine.kairou.com/15/">オンライン文芸マガジン『回廊』第15号</a>に参加した作品です。ウェブ上で読むことができます。<br/>
+夫のもとに届いた怪しい手紙。これから北の地へ旅立つという女が幸薄い半生を語ります。<br/>
+ワンアイデア・ショートストーリーです。勘の良い方は背後にある法則性に気づくかもしれません。<br/>
+分類するとすればホラー、雰囲気としては変格探偵小説が近いでしょう。</p></div>
+					<div class="meta px-3">2008.03.15公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<div class="floatimg"><a href="http://d.hatena.ne.jp/helioterrorism/100511"><img src="img/cover/060224_helioterrorism3.jpg" alt="ミッシング・アンダー・ザ・サン" width="150"></a></div>
+					<header class="heading px-3"><a href="http://d.hatena.ne.jp/helioterrorism/100511">ミッシング・アンダー・ザ・サン</a></header>
+					<div class="guide px-3"><p>そらけいさん編集長の同人誌<a href="http://d.hatena.ne.jp/helioterrorism/100511">「ヘリオテロリズム」Vol.3</a>に参加した作品です。<br/>
+新薬の被験者となった少年、やがて現れた奇妙な症状の正体とは。<br/>
+前頭葉についての脳科学を材料にしたSF短編です。<br/>
+カクヨムにて公開しました。<a href="https://kakuyomu.jp/works/1177354054888619515">「ミッシング・アンダー・ザ・サン」</a>を参照してください。</p></div>
+					<div class="meta px-3">2006.02.24公開</div>
+					
+				</aside>
+				
+				<aside class="col-lg-6 p-0">
+					
+					<div class="floatimg"><a href="http://d.hatena.ne.jp/helioterrorism/100504"><img src="img/cover/050514_helioterrorism2.jpg" alt="アブラクサスの狭間" width="150"></a></div>
+					<header class="heading px-3"><a href="http://d.hatena.ne.jp/helioterrorism/100504">アブラクサスの狭間</a></header>
+					<div class="guide px-3"><p>そらけいさん編集長の同人誌<a href="http://d.hatena.ne.jp/helioterrorism/100504">「ヘリオテロリズム」Vol.2</a>に参加した作品です。<br/>
+幻想写真家がみた奇妙な夢、十六年後にその娘が受け取った一葉の写真。<br/>
+コンストラクティッド・フォトの写真論が到達した狂気の結論とは。<br/>
+ミステリより幻想文学に傾いています。<br/>
+カクヨムにて公開しました。<a href="https://kakuyomu.jp/works/1177354054888681404">「アブラクサスの狭間」</a>を参照してください。</p></div>
+					<div class="meta px-3">2006.02.24公開</div>
+					
+				</aside>
+				
+			</div><!-- end of row -->
+			
+		</section>
+		
+	</main>
+
+	<footer class="row justify-content-center my-3">
+		<nav class="col-lg-12 text-end">
+			<a href="index.html"><img src="img/banner/banner.gif" alt="*the long fish*" width="88" height="31"></a>
+		</nav>
+	</footer><!-- end of row -->
+
+	<!-- サイト案内 -->
+	<div class="modal fade" id="guide" tabindex="-1" aria-labelledby="guideLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-scrollable">
+			<div class="modal-content bg-transparent">
+				<div class="modal-header">
+					<header class="modal-title" id="guideLabel">サイト案内</header>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				
+					<h2>このサイトについて</h2>
+					
+					<aside class="p-0">
+						
+						<header class="heading px-3">*the long fish*（ザ・ロングフィッシュ）</header>
+						<div class="guide px-3"><p>小田牧央／杉本＠むにゅ10号がサイト管理者を務める個人サイトです。<br/>
+筆者の署名がない文章は、基本的にサイト管理者が記述しています。</p>
+
+<p>迷惑メール防止のため、サイト管理者のメールアドレスは公開していません。<br/>
+連絡が必要な場合は<a href="https://twitter.com/longfish801">Twitter</a>をご利用ください。</p></div>
+						
+					</aside>
+					
+				
+					<h2>サイト管理者</h2>
+					
+					<aside class="p-0">
+						
+						<div class="floatimg"><img src="img/portrait.png" alt="ポートレート" width="150"></div>
+						<header class="heading px-3">小田牧央（おだ・まきお）</header>
+						<div class="guide px-3"><p>1976年福井県生まれ。<br/>
+小説執筆用のペンネーム。<br/>
+ハンドルネームとして「杉本＠むにゅ10号」を用いる。<br/>
+Twitterでは平日に深夜アニメの感想を、<br/>
+週末には読んだ本の感想をつぶやいている。<br/>
+本業はシステムエンジニア。<br/>
+最近のJavaの文法についていけない。<br/>
+（2022.05.05記）</p></div>
+						
+					</aside>
+					
+				
+					<h2>商業出版</h2>
+					
+					<aside class="p-0">
+						
+						<div class="floatimg"><a href="https://www.amazon.co.jp/%E6%96%B0%E3%83%BB%E6%9C%AC%E6%A0%BC%E6%8E%A8%E7%90%86%E3%80%8804%E3%80%89%E8%B5%A4%E3%81%84%E9%A4%A8%E3%81%AE%E6%80%AA%E4%BA%BA%E7%89%A9-%E5%85%89%E6%96%87%E7%A4%BE%E6%96%87%E5%BA%AB-%E4%BA%8C%E9%9A%8E%E5%A0%82-%E9%BB%8E%E4%BA%BA/dp/4334736580?SubscriptionId=15V2PN3P15ET69D45D02&linkCode=li2&tag=longfish801-22&linkId=44ddbf7a90ddc5430c6ca1e85b53df39&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4334736580&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=longfish801-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=longfish801-22&language=ja_JP&l=li2&o=9&a=4334736580" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+						<header class="heading px-3"><a href="https://amzn.to/3kE1IXB">カントールの楽園で</a> <a href="https://amzn.to/3Fhj06e"><img src="img/logo/logo_amazon.png" alt="Amazon" class="logo" /></a></header>
+						<div class="guide px-3"><p><a href="https://amzn.to/3kE1IXB">二階堂黎人編集長『新・本格推理04』(光文社)</a>に採用された短編です。<br/>
+台風で山間道路に閉じ込められた二人の男が、迷いこんだ山荘で女性の他殺死体を発見する。<br/>
+状況からして犯人は二人のどちらかなのだが。<br/>
+滅・こぉるさんの「密室＋ダイイングメッセージ」(<a href="http://www.cypress.ne.jp/hp10203249/">たそがれSpringPoint</a>＞<a href="http://www.cypress.ne.jp/hp10203249/q/0205b.html#q020511a">日々の憂鬱 2002/05/11</a>)というアイデアを下敷きにさせていただきました。あらためて感謝します。</p></div>
+						
+					</aside>
+					
+					<aside class="p-0">
+						
+						<div class="floatimg"><a href="https://www.amazon.co.jp/%E5%BE%A1%E6%89%8B%E6%B4%97%E6%BD%94%E6%94%BB%E7%95%A5%E6%9C%AC-%E5%B3%B6%E7%94%B0-%E8%8D%98%E5%8F%B8/dp/4562033584?SubscriptionId=15V2PN3P15ET69D45D02&linkCode=li2&tag=longfish801-22&linkId=469543038b2681789028605755a5d505&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4562033584&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=longfish801-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=longfish801-22&language=ja_JP&l=li2&o=9&a=4562033584" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+						<header class="heading px-3"><a href="https://amzn.to/3LQe9vA">数学者からの報酬</a> <a href="https://amzn.to/3Fhj06e"><img src="img/logo/logo_amazon.png" alt="Amazon" class="logo" /></a></header>
+						<div class="guide px-3"><p>原書房の御手洗潔パロディ作品募集に応募し、<a href="https://amzn.to/3LQe9vA">島田荘司責任編集『御手洗潔攻略本』</a>に収録されました。<br/>
+一人の数学者が残した暗号に御手洗潔が挑みます。パロディだけに御手洗潔シリーズを一通り読んでいなければわからないところがあります。<br/>
+Ｎ大学ミステリ研究会会員としての応募という意味でペンネームは「杉本＠むにゅ10号」にしています。</p></div>
+						
+					</aside>
+					
+					<aside class="p-0">
+						
+						<div class="floatimg"><a href="https://www.amazon.co.jp/%E3%83%94%E3%82%A8%E3%83%AD%E3%82%81%E3%81%96%E3%82%81%E3%82%88-%E3%82%81%E3%81%96%E3%82%81%E3%82%88%E3%83%94%E3%82%A8%E3%83%AD-%E5%B0%8F%E7%94%B0-%E7%89%A7%E5%A4%AE/dp/4797402709?SubscriptionId=15V2PN3P15ET69D45D02&linkCode=li2&tag=longfish801-22&linkId=166ab6860ddf3a963af9763c4e4f55b5&language=ja_JP&ref_=as_li_ss_il" target="_blank"><img border="0" src="//ws-fe.amazon-adsystem.com/widgets/q?_encoding=UTF8&ASIN=4797402709&Format=_SL160_&ID=AsinImage&MarketPlace=JP&ServiceVersion=20070822&WS=1&tag=longfish801-22&language=ja_JP" ></a><img src="https://ir-jp.amazon-adsystem.com/e/ir?t=longfish801-22&language=ja_JP&l=li2&o=9&a=4797402709" width="1" height="1" border="0" alt="" style="border:none !important; margin:0px !important;" /></div>
+						<header class="heading px-3"><a href="https://amzn.to/3LP3CAB">ピエロめざめよめざめよピエロ</a> <a href="https://amzn.to/3Fhj06e"><img src="img/logo/logo_amazon.png" alt="Amazon" class="logo" /></a></header>
+						<div class="guide px-3"><p>第二回新風舎出版賞フィクション部門の最優秀賞を受賞した長編ミステリです。<br/>
+誰でも一瞬で催眠状態にすることができるガスはなにをもたらしたのか。<br/>
+深夜の遊園地で起こる事件に高校生コンビが挑みます。<br/>
+新風舎は破産しましたが、Amazonで中古が手に入るようです。</p></div>
+						
+					</aside>
+					
+				
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>

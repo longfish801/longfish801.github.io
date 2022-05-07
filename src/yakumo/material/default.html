@@ -1,0 +1,252 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.0/font/bootstrap-icons.css" />
+	<style type="text/css">
+		<!--
+		body {
+			font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN", "Hiragino Sans", Meiryo, sans-serif;
+			letter-spacing: 0.1rem;
+			line-height: 1.8rem;
+			text-align: justify;
+			word-wrap: break-word;
+			background-color: #FFCC00;
+			background-image: url(img/mat/bg.png);
+		}
+
+		header.row {
+			margin: 5rem auto;
+		}
+
+		h1 {
+			display: none;
+		}
+
+		h2 {
+			background-color: #00CCFF;
+			color: #ffffff;
+			border-radius: 15px;
+			letter-spacing: 1.3rem;
+			font-size: 1.7rem;
+			line-height: 2.3rem;
+			text-align: center;
+		}
+
+		aside {
+			background-image: url(img/mat/skel.gif);
+			border-left: 1px dashed #999999;
+			border-right: 1px dashed #999999;
+		}
+
+		header.heading {
+			background-image: url(img/mat/bg_header.png);
+			font-size: 1.3rem;
+			line-height: 2.3rem;
+		}
+
+		img.logo {
+			border-radius: 15px;
+			height: 2.2rem;
+		}
+
+		div.toc {
+			line-height: 2.5rem;
+		}
+
+		div.modal-header {
+			font-size: 1.3rem;
+			line-height: 2.3rem;
+			background-color: #FFCC66;
+			background-image: url(img/mat/bg.png);
+		}
+
+		div.modal-body,
+		div.modal-footer {
+			background-color: #FFCC00;
+			background-image: url(img/mat/bg.png);
+		}
+
+		div.meta {
+			text-align: right;
+			font-style: italic;
+			font-size: 0.8rem;
+			line-height: 1.2rem;
+			color: #999999;
+		}
+
+		div.ccopy {
+			background-image: url(img/mat/skel.gif);
+			font-size: 1.3rem;
+			line-height: 2.3rem;
+			color: #000000;
+		}
+
+		div.guide {
+			font-size: 1.0rem;
+			line-height: 1.8rem;
+		}
+
+		div.floatimg {
+			margin: 10px;
+			float: right;
+		}
+
+		#guideButton {
+			font-size: 1.3rem;
+			line-height: 2.3rem;
+		}
+		-->
+	</style>
+	<link rel="icon" href="favicon.ico" />
+	<title>*the long fish*</title>
+</head>
+
+<body class="container">
+
+	<!-- タイトル -->
+	<header class="row justify-content-center align-items-center p-3">
+		<div class="col-lg-4 text-end">
+			<h1>*the long fish*</h1>
+			<figure>
+				<img src="img/title.png" class="img-fluid" alt="*the long fish*" />
+			</figure>
+		</div>
+		<div class="col-lg-6">
+			<figure>
+				<img src="img/avatar.png" class="img-fluid" alt="ながいさかなちゃん" />
+			</figure>
+		</div>
+	</header><!-- end of row -->
+
+	<!-- ロゴ、サイト案内 -->
+	<nav class="row justify-content-center align-items-center my-3 p-3">
+		<nav class="col-lg-6 text-center">
+			<% draft.solve('/draft/logos').lowers.values().each { def logo -> %>
+			<a href="${logo.href}"><img src="${logo.src}" alt="${logo.altText}" class="logo" /></a>
+			<% } %>
+		</nav>
+		<nav class="col-lg-6 text-center p-3">
+			<button type="button" id="guideButton" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#guide">サイト案内</button>
+		</nav>
+	</nav><!-- end of row -->
+
+	<!-- バナー -->
+	<nav class="row justify-content-center my-5">
+		<% draft.solve('/draft/banners').lowers.values().each { def banner -> %>
+		<div class="col-lg-6">
+			<figure class="text-center">
+				<a href="${banner.href}"><img src="${banner.src}" class="img-fluid" alt="${banner.altText}"></a>
+			</figure>
+		</div>
+		<% } %>
+	</nav><!-- end of row -->
+
+	<!-- タブ -->
+	<nav class="row justify-content-center">
+		<div class="col-lg-12">
+			<ul class="nav nav-pills" id="tabs" role="tablist">
+				<% draft.findAll(/tab:.+/).eachWithIndex { def tab, int idx -> %>
+				<li class="nav-item" role="presentation"><button class="nav-link${(idx == 0)? ' active' : ''}" id="${tab.name}-tab"
+						data-bs-toggle="pill" data-bs-target="#${tab.name}" type="button" role="tab" aria-controls="${tab.name}"
+						aria-selected="${(idx == 0)? 'true' : 'false'}">${tab.dfltHtml}</button></li>
+				<% } %>
+			</ul>
+		</div>
+	</nav><!-- end of row -->
+
+	<main class="tab-content">
+		<% draft.findAll(/tab:.+/).eachWithIndex { def tab, int idx -> %>
+		<!-- ${tab.dflt} -->
+		<section class="container tab-pane fade show${(idx == 0)? ' active' : ''}" id="${tab.name}" role="tabpanel" aria-labelledby="${tab.name}-tab">
+			<div class="row justify-content-center">
+				<!-- 目次リンク -->
+				<div class="toc col-lg-12 p-2">
+				<% tab.findAll(/section:.+/).each { def section -> %>
+					<a href="#${section.name}" class="btn btn-light">＃${section.dfltHtml}</a>
+				<% } %>
+				</div>
+			</div><!-- end of row -->
+			<% tab.findAll(/section:.+/).each { def section -> %>
+			<div class="row justify-content-center">
+				<h2 class="col-lg-8 my-3 p-2" id="${section.name}">${section.dfltHtml}</h2>
+			</div><!-- end of row -->
+			<div class="row">
+				<% section.findAll(/aside:.+/).each { def aside -> %>
+				<aside class="col-lg-${tab.col} p-0">
+					<% if (tab.name == 'novel'){ %>
+					<header class="heading px-3">${aside.anchor}</header>
+					<div class="ccopy px-3 pt-3 pb-1">${aside.ccopyHtml}</div>
+					<div class="guide px-3 pt-2">${aside.dfltHtml}</div>
+					<div class="meta px-3">${aside.pubdate}公開 ${aside.pnum}枚/四百字詰</div>
+					<% } else if (tab.name == 'text'){ %>
+					<header class="heading px-3">${aside.anchor}</header>
+					<% if (aside.dflt != null){ %><div class="guide px-3">${aside.dfltHtml}</div><% } %>
+					<div class="meta px-3">${aside.pubdate}公開</div>
+					<% } else if (tab.name == 'selfpub'){ %>
+					<div class="floatimg"><a href="${aside.href}"><img src="${aside.src}" alt="${aside.titleText}" width="150"></a></div>
+					<header class="heading px-3">${aside.anchor}</header>
+					<div class="guide px-3">${aside.dfltHtml}</div>
+					<div class="meta px-3">${aside.pubdate}公開</div>
+					<% } %>
+				</aside>
+				<% } %>
+			</div><!-- end of row -->
+			<% } %>
+		</section>
+		<% } %>
+	</main>
+
+	<footer class="row justify-content-center my-3">
+		<nav class="col-lg-12 text-end">
+			<a href="index.html"><img src="img/banner/banner.gif" alt="*the long fish*" width="88" height="31"></a>
+		</nav>
+	</footer><!-- end of row -->
+
+	<!-- サイト案内 -->
+	<div class="modal fade" id="guide" tabindex="-1" aria-labelledby="guideLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg modal-dialog-scrollable">
+			<div class="modal-content bg-transparent">
+				<div class="modal-header">
+					<header class="modal-title" id="guideLabel">サイト案内</header>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+				<% draft.solve('/draft/guide').lowers.values().each { def section -> %>
+					<h2>${section.dfltHtml}</h2>
+					<% section.findAll(/aside:.+/).each { def aside -> %>
+					<aside class="p-0">
+						<% if (aside.name == 'longfish'){ %>
+						<header class="heading px-3">${aside.titleHtml}</header>
+						<div class="guide px-3">${aside.dfltHtml}</div>
+						<% } else if (aside.name == 'odamakio'){ %>
+						<div class="floatimg"><img src="${aside.src}" alt="ポートレート" width="150"></div>
+						<header class="heading px-3">${aside.titleHtml}</header>
+						<div class="guide px-3">${aside.dfltHtml}</div>
+						<% } else { %>
+						<div class="floatimg">${aside.amathum}</div>
+						<header class="heading px-3">${aside.anchor}</header>
+						<div class="guide px-3">${aside.dfltHtml}</div>
+						<% } %>
+					</aside>
+					<% } %>
+				<% } %>
+				</div>
+				<div class="modal-footer">
+					<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">閉じる</button>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+		crossorigin="anonymous"></script>
+
+</body>
+
+</html>

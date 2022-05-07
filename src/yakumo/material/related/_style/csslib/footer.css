@@ -1,0 +1,24 @@
+@charset "utf-8";
+#footer {
+	text-align: right;
+	margin-bottom: 2em;
+}
+#footer a:hover {
+	background-color: transparent;
+}
+#navi img {
+	border-width: 0px;
+	margin: 5px;
+}
+#copy {
+	font-family: Arial;
+	font-size: 80%;
+}
+hr {
+	color: #999999;
+	border-width: 1px;
+	border-style: solid;
+	line-height: 120%;
+	padding: 0px;
+	margin: 0px 0px 1em 0px;
+}

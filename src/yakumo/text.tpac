@@ -1,0 +1,706 @@
+#! draft
+#> tab:text ザツブン
+#-col 4
+#>> section:subcul サブカル感想
+#>>> aside:220328_stareater
+#-title 虚しい夢が人を励ます――模造クリスタル「スターイーター」感想
+#-href https://note.com/longfish801/n/n6d76581f238f
+#-logo @/draft/logos/logo:note
+#-pubdate 2022.03.28
+模造クリスタル『スターイーター　模造クリスタル作品集』（イースト・プレス／2022年2月）の表題作についての感想です。
+あの感動的な、でも意味不明な手紙について、私なりの解釈を述べています。
+#>
+
+#>>> aside:200126_mariko
+#-title けれど、迷いはずっとある――平庫ワカ『マイ・ブロークン・マリコ』感想
+#-href https://note.com/longfish801/n/ne6601a1674e5
+#-logo @/draft/logos/logo:note
+#-pubdate 2020.01.26
+平庫ワカ『マイ・ブロークン・マリコ』（BRIDGE COMICS／角川書店）の感想です。
+なぜシイノはマリコの死にここまで揺さぶられるのか。
+作品内の描写をたどってみると、意外なほどロジカルでした。
+#>
+
+#>>> aside:170109_yourname
+#-title マジョリティの孤独――映画『君の名は。』感想
+#-href /pages/2017/170109_yourname/
+#-pubdate 2017.01.09
+映画『君の名は。』（新海誠監督／2016年8月公開）の感想です。
+あの複雑な物語展開の辻褄はどうなっているのか考えてみました。
+#>
+
+#>>> aside:150720_darklove
+#-title 愛情から生まれる闇――映画『バケモノの子』感想
+#-href /pages/2015/150720_darklove/
+#-pubdate 2015.07.20
+映画『バケモノの子』（細田守監督／2015年7月公開）の感想です。
+人の心に宿る闇とはなにかという疑問からスタートして、作品タイトルの意味について考察しています。
+#>
+
+#>>> aside:150413_persuasiongame
+#-title 説得ゲームと物語の奇跡について――ＴＶアニメ『SHIROBAKO』感想
+#-href /pages/2015/150413_persuasiongame/
+#-pubdate 2015.04.13
+ＴＶアニメ『SHIROBAKO』（水島努監督／P.A.WORKS制作／2014年10月～翌年3月放映）の感想です。
+戯画的な演出が作品のテーマにどうつながっているのか考察しました。
+#>
+
+#>>> aside:141222_whynotear
+#-title なぜ父は涙を流さなかったのか――映画『インターステラー』感想
+#-href /pages/2014/141222_whynotear/
+#-pubdate 2014.12.22
+映画『インターステラー』（クリストファー・ノーラン監督／2014年日本公開）の感想です。
+終盤の場面に抱いた違和感を手掛かりとして作品のテーマについて考えました。
+#>
+
+#>>> aside:120423_sakurada2
+#-title 伝わらないよりはずっといい――〈サクラダリセット〉シリーズ感想
+#-href /pages/2012/120423_sakurada2/
+#-pubdate 2012.04.23
+河野裕〈サクラダリセット〉シリーズの、主に５巻以降の感想です。
+【リンク：これからの「サクラダリセット」の話をしよう：/pages/2011/110109_sakurada/】の補遺です。
+#>
+
+#>>> aside:120408_nervousgirls
+#-title 少女たちの不安と仲良しの行方――ＴＶアニメ『ブラック★ロックシューター』感想
+#-href /pages/2012/120408_nervousgirls/
+#-pubdate 2012.04.08
+ＴＶアニメ『ブラック★ロックシューター』（監督 吉岡忍／シリーズ構成・脚本 岡田麿里／2012年2月～3月放映）の感想です。
+個人的には、時代の節目を象徴するような作品のひとつだったと思っています。
+#>
+
+#>>> aside:110501_nohopestory
+#-title 誰も物語を信じない――「魔法少女まどか☆マギカ」感想
+#-href /pages/2011/110501_nohopestory/
+#-pubdate 2011.05.01
+アニメ『魔法少女まどか☆マギカ』（監督 新房昭之／2011年1月～4月放映）の感想です。
+あのようなラストがなぜ可能になるのか物語の構造について考えてみました。
+#>
+
+#>>> aside:110109_sakurada
+#-title これからの「サクラダリセット」の話をしよう
+#-href /pages/2011/110109_sakurada/
+#-pubdate 2011.01.09
+河野裕『サクラダリセット１』～『サクラダリセット４』の感想です。
+マイケル・サンデル『これからの「正義」の話をしよう』と比べています。
+いわば、正義の在り方の違いを巡るハーヴァード大学教授とライトノベル作家の思想対決です。
+#>
+
+#>>> aside:100920_spaceyui
+#-title 平沢唯の空間――「けいおん!!」最終回感想
+#-href /pages/2010/100920_spaceyui/
+#-pubdate 2010.09.20
+ＴＶアニメ『けいおん！』『けいおん！！』の感想です。
+平沢唯はどんな人物だったのか、作品中のさまざまな断片から浮き彫りにすることを試みています。
+あと、面白いショートパロディもあります。
+#>
+
+#>>> aside:100719_nausicaajustice
+#-title ナウシカがたどりついた正義――『風の谷のナウシカ』感想
+#-href /pages/2010/100719_nausicaajustice/
+#-pubdate 2010.07.19
+宮崎駿『風の谷のナウシカ』の感想です。映画ではなく、アニメ情報誌『アニメージュ』に連載された漫画作品のほうです。
+ナウシカとヴ王の道化が交わす謎めいた対話にはどんな背景があったのか、物語展開をふりかえっています。
+#>
+
+#>>> aside:100627_worldorboku
+#-title 救うべきはセカイか、それともボクか――「Angel Beats!」感想
+#-href /pages/2010/100627_worldorboku/
+#-pubdate 2010.06.27
+ＴＶアニメ『Angel Beats!』（岸誠二監督／P.A.WORKS制作／2010年4月～6月放映）の感想です。
+音無の行動目的がどんどん変わっていくことを踏まえて物語をふりかえってみました。
+#>
+
+#>>> aside:090815_seacat
+#-title 「うみねこのなく頃に」整理ノート
+#-href /pages/2009/090815_seacat/
+#-pubdate 2009.08.15
+07th Expansion「うみねこのなく頃に」について、どのような謎が提示されているか整理しました。
+私なりの考察もしています。
+#>
+
+#>>> aside:090705_thirdviolence
+#-title 第三の暴力――『HELLSING』感想
+#-href /pages/2009/090705_thirdviolence/
+#-pubdate 2009.07.05
+平野耕太『HELLSING』の感想です。
+最終巻でのインテグラのセリフをふりだしに、この物語のテーマについて考察しました。
+#>
+
+#>>> aside:090329_wholost
+#-title 『涼宮ハルヒの消失』の消失
+#-href /pages/2009/090329_wholost/
+#-pubdate 2009.03.29
+谷川流『涼宮ハルヒの消失』をベースとしたパロディ小説です。
+この物語の背後にあったかもしれないＩＦの物語を綴っています。
+超能力者が理屈っぽい話を延々と語っているのでご注意ください。
+#>
+
+#>>> aside:050710_wtc
+#-title 「ひぐらしのなく頃に」完全解明に挑む
+#-href /pages/2005/050710_wtc/
+#-pubdate 2005.07.10
+07th Expansion「ひぐらしのなく頃に」について、どのような謎が提示されているか整理しました。
+私なりの考察もしています。
+#>
+
+#>>> aside:031102_suzumiya
+#-title 幻想小説の系譜から読む『涼宮ハルヒの憂鬱』
+#-href /pages/2003/031102_suzumiya/
+#-pubdate 2003.11.02
+谷川流『涼宮ハルヒの憂鬱』の感想です。
+ツヴェタン・トドロフ『幻想文学論序説』を下敷きに、幻想小説としての『涼宮ハルヒの憂鬱』について検証しました。
+#>
+
+#>> section:reading 読み物
+#>>> aside:130225_fictionalright
+#-title 新しい生に必要なのは虚構権なのか？ ――藤田直哉『虚構内存在　筒井康隆と〈新しい《生》の次元〉』感想
+#-href /pages/2013/130225_fictionalright/
+#-pubdate 2013.02.25
+藤田直哉『虚構内存在』についての紹介ならびに感想です。
+#>
+
+#>>> aside:080927_itandjapan
+#-title パソコンは日本文化をどう変えたか
+#-href /pages/2008/080927_itandjapan/
+#-pubdate 2008.09.27
+YOMIURI PC 編集部『パソコンは日本語をどう変えたか』を読んで、つらつら思ったことを綴りました。
+#>
+
+#>> section:mystery ミステリ関連
+#>>> aside:211231_specialreal
+#-title 特殊設定という名のリアル
+#-href /pages/2021/211231_specialreal/
+#-pubdate 2021.12.31
+2021年に流行した「特殊設定ミステリ」という言葉について自分なりに整理しました。
+#>
+
+#>>> aside:140420_kawaramati
+#-title 円居挽『河原町ルヴォワール』双龍会詳読
+#-href /pages/2014/140420_kawaramati/
+#-pubdate 2014.04.20
+円居挽『河原町ルヴォワール』の双龍会でのやりとりを整理し、ちょっとした考察を足しました。
+#>
+
+#>>> aside:120826_byeshinhonkaku
+#-title 新本格よ、さらば ――『21世紀探偵小説』感想
+#-href /pages/2012/120826_byeshinhonkaku/
+#-pubdate 2012.08.26
+限界研［編］『21世紀探偵小説　ポスト新本格と論理の崩壊』を読んで感じたことを整理しました。
+国内本格ミステリは本当に衰退期なのか、それはどんなことを意味するのか綴っています。
+#>
+
+#>>> aside:100404_another
+#-title 綾辻行人『Another』早引表
+#-href /pages/2010/100404_another/
+#-pubdate 2010.04.04
+綾辻行人『Another』の早引表に加えて、幻想小説、キャラクター小説としての側面について考えを綴りました。
+#>
+
+#>>> aside:100317_zeromys
+#-title ゼロ年代ライトノベル系ミステリ注目作品リスト
+#-href /pages/2010/100317_zeromys/
+#-pubdate 2010.03.17
+ゼロ年代（2000～2009）に出版された、ライトノベル系ミステリ小説（いわゆるライトノベルレーベルで刊行されたミステリや、アニメ・まんがの影響を深く受けていると思われる作品）のリストです。
+#>
+
+#>>> aside:080802_mysterious10
+#-title ミステリの固定観念を崩す10冊
+#-href /pages/2008/080802_mysterious10/
+#-pubdate 2008.08.02
+普段ミステリ読まない人に「え？こんなのもミステリ？」とびっくりさせるための作品リストです。
+#>
+
+#>>> aside:070415_doubleq
+#-title Ｑの変奏
+#-href /pages/2007/070415_doubleq/
+#-pubdate 2007.04.15
+夢野久作『ドグラ・マグラ』を中心にミステリの多様性について論じました。
+#>
+
+#>>> aside:060424_door
+#-title 碓氷優佳の妄想と推理
+#-href /pages/2006/060424_door/
+#-pubdate 2006.04.24
+石持浅海『扉は閉ざされたまま』について別解を推理してみました。
+MYSCON7の読書会をきっかけに書いた文章です。
+#>
+
+#>>> aside:051225_suspectx
+#-title Ｘの献身が報われるとき
+#-href /pages/2005/051225_suspectx/
+#-pubdate 2005.12.25
+東野圭吾『容疑者Ｘの献身』についての感想です。
+本格ミステリか否かについての判断も綴っています。
+#>
+
+#>>> aside:051224_godtruth
+#-title 神様ゲームの勝者は誰だったのか？
+#-href /pages/2005/051224_godtruth/
+#-pubdate 2005.12.24
+麻耶雄嵩『神様ゲーム』についての感想です。
+あの衝撃的なラストについて考えを巡らせました。
+#>
+
+#>>> aside:050413_firefly
+#-title 蛍の旋律に我々は如何にして幻惑されたか
+#-href /pages/2005/050413_firefly/
+#-pubdate 2005.04.13
+麻耶雄嵩『螢』についての考察です。
+MYSCON6の読書会に持参したカウンターレジュメも載せています。
+#>
+
+#>>> aside:040315_screw
+#-title 眩暈的幻想、ネジ式フィクション
+#-href /pages/2004/040315_screw/
+#-pubdate 2004.03.15
+島田荘司『眩暈』と『ネジ式ザゼツキー』を比較しています。
+絵空事としか思えないことが起きるのは似ていますが、幻想の扱い方が正反対という話です。
+MYSCON5の読書会にてゲリラ配布しました。
+#>
+
+#>>> aside:030318_fukui
+#-title あなたの古里に、名探偵はいますか？
+#-href /pages/2003/030318_fukui/
+#-pubdate 2003.03.23
+安田輝雄［編］『福井県名探偵実話集』の紹介です。
+#>
+
+#>> section:resume 早引表／登場人物一覧
+#>>> aside:170610_honestman
+#-title 白井智之『東京結合人間』早引表
+#-href /pages/2017/170610_honestman/
+#-pubdate 2017.06.10
+#>
+
+#>>> aside:150614_perspective
+#-title 長沢樹『夏服パースペクティヴ』早引表
+#-href /pages/2015/150614_perspective/
+#-pubdate 2015.06.14
+#>
+
+#>>> aside:140621_recursible
+#-title 米澤穂信『リカーシブル』早引表
+#-href /pages/2014/140621_recursible/
+#-pubdate 2014.06.21
+#>
+
+#>>> aside:130721_hankinren
+#-title 山田風太郎『妖異金瓶梅』登場人物一覧
+#-href /pages/2013/130721_hankinren/
+#-pubdate 2013.07.21
+#>
+
+#>>> aside:130615_king
+#-title 法月綸太郎『キングを探せ』早引表
+#-href /pages/2013/130615_king/
+#-pubdate 2013.06.15
+#>
+
+#>>> aside:120805_tragedyW
+#-title 古野まほろ『命に三つの鐘が鳴る』早引表
+#-href /pages/2012/120805_tragedyW/
+#-pubdate 2012.08.05
+#>
+
+#>>> aside:120805_keel
+#-title 米澤穂信『折れた竜骨』早引表
+#-href /pages/2012/120805_keel/
+#-pubdate 2012.08.05
+#>
+
+#>>> aside:110529_albatross
+#-title 七河迦南『アルバトロスは羽ばたかない』早引表
+#-href /pages/2011/110529_albatross/
+#-pubdate 2011.05.29
+#>
+
+#>>> aside:110429_inthebox
+#-title 竹本健治『匣の中の失楽』早引表
+#-href /pages/2011/110429_inthebox/
+#-pubdate 2011.04.29
+#>
+
+#>>> aside:110305_revoir
+#-title 円居挽『丸太町ルヴォワール』早引表
+#-href /pages/2011/110305_revoir/
+#-pubdate 2011.03.05
+#>
+
+#>>> aside:101024_incitemill
+#-title 米澤穂信『インシテミル』早引表
+#-href /pages/2010/101024_incitemill/
+#-pubdate 2010.10.24
+#>
+
+#>>> aside:111016_karasuma
+#-title 円居挽『烏丸ルヴォワール』第二章詳読
+#-href /pages/2011/111016_karasuma/
+#-pubdate 2011.10.16
+#>
+
+#>>> aside:100904_sonaten
+#-title 麻耶雄嵩『夏と冬の奏鳴曲』早引表
+#-href /pages/2010/100904_sonaten/
+#-pubdate 2010.09.04
+#>
+
+#>> section:reasoning ミステリ評論〈試供版〉
+#>>> aside:170805_violence
+#-title 暴力と生の狭間で〈試供版〉
+#-href /pages/2017/170805_violence/
+#-pubdate 2017.07.30
+探偵小説研究会の機関誌『CRITICA』第12号に寄せた文章の試供版です。
+暴力をテーマに白井智之『東京結合人間』について精読しました。
+#>
+
+#>>> aside:161112_casual
+#-title 本格とカジュアルとの距離〈試供版〉
+#-href /pages/2016/161112_casual/
+#-pubdate 2016.11.12
+探偵小説研究会の機関誌『CRITICA』第11号に寄せた文章の試供版です。
+ライト文芸の隆盛がミステリとどのような関係にあり、本格ミステリにどのような影響を与えているのか、状況を論じています。
+主に三上延、初野晴、井上真偽、東川篤哉、織守きょうや、北山猛邦、麻耶雄嵩、米澤穂信、瀬川コウ、森川智喜、皆藤黒助、久住四季の作品に触れています。
+#>
+
+#>>> aside:150808_monsterlove
+#-title 怪物の愛〈試供版〉
+#-href /pages/2015/150808_monsterlove/
+#-pubdate 2015.08.08
+探偵小説研究会の機関誌『CRITICA』第10号に寄せた文章の試供版です。
+現代の本格ミステリにおいて、心理を描くことが謎解きとどのように結びつくのか長沢樹『夏服パースペクティヴ』の読解を中心に探ります。
+#>
+
+#>>> aside:140810_lullaby
+#-title 目覚めのための子守歌――“伊藤計劃以後”として読む米澤穂信〈試供版〉
+#-href /pages/2014/140810_lullaby/
+#-pubdate 2014.08.10
+探偵小説研究会の機関誌『CRITICA』第９号に寄せた文章の試供版です。
+米澤穂信『リカーシブル』に描かれた多元的な世界観を手がかりとして、国内本格ミステリシーンとゼロ年代後半からの文化状況との共振について概観します。
+#>
+
+#>>> aside:130728_bigdata
+#-title 探偵が推理を殺す〈試供版〉
+#-href /pages/2013/130728_bigdata/
+#-pubdate 2013.07.28
+探偵小説研究会の機関誌『CRITICA』第８号に寄せた文章の試供版です。
+知の手法のパラダイムシフトと共に、現代の本格ミステリは環境依存性の高い問題解決手法を手探りすることで新しい名探偵像を模索しつつあることを法月綸太郎『キングを探せ』を通じて解説します。
+#>
+
+#>>> aside:120729_killed
+#-title 推理が探偵を殺す〈試供版〉
+#-href /pages/2012/120729_killed/
+#-pubdate 2012.07.29
+探偵小説研究会の機関誌『CRITICA』第７号に寄せた文章の試供版です。
+全知全能の空想ヒーローではなく現実的な問題解決のエキスパートへ、ゼロ年代後半から顕著になりつつある名探偵像の変容とそこから生じる問題を、名探偵の政治的な態度をキーワードとして浮き彫りにします。
+有栖川有栖「モロッコ水晶の謎」『乱鴉の島』『女王国の城』『闇の喇叭』『真夜中の探偵』、米澤穂信『折れた竜骨』、古野まほろ『命に三つの鐘が鳴る』について読み解いています。
+#>
+
+#>>> aside:110806_game
+#-title ゲーム系ミステリの思想〈試供版〉
+#-href /pages/2011/110806_game/
+#-pubdate 2011.08.06
+探偵小説研究会の機関誌『CRITICA』第６号に寄せた文章の試供版です。
+07th Expansion制作『うみねこのなく頃に』がミステリ作品としてどのような歴史的経緯を受け継ぎ、どのような同時代性を帯びているか、垂直方向と水平方向の座標を示します。
+併せて土橋真二郎『殺戮ゲームの館』、七河迦南『アルバトロスは羽ばたかない』にも触れています。
+#>
+
+#>>> aside:110806_fantasique
+#-title 奇想の現在〈試供版〉
+#-href /pages/2011/110806_fantasique/
+#-pubdate 2011.08.06
+探偵小説研究会の機関誌『CRITICA』第６号に寄せた文章の試供版です。
+八〇年代後半から現代まで、島田荘司の本格ミステリー論を中心に、ミステリにおける幻想概念の変化を論じます。
+山口芳宏『妖精島の殺人』『学園島の殺人』について紹介しています。
+#>
+
+#>>> aside:100731_choice
+#-title 虚ろの騎士と状況の檻――ゼロ年代本格ミステリからセカイ系への応答〈試供版〉
+#-href /pages/2010/100731_choice/
+#-pubdate 2010.07.31
+探偵小説研究会の機関誌『CRITICA』第５号に寄せた文章の試供版です。
+九〇年代後半から現代にかけて、社会状況の大きな変化が「セカイ系」と呼ばれる作品群を生みだしました。現代の国内本格ミステリがセカイ系から受けた影響とその応答について詳述します。
+東野圭吾『容疑者Ｘの献身』／クリストファー・ノーラン監督『ダークナイト』／綾辻行人『Another』／相沢沙呼『午前零時のサンドリヨン』／似鳥鶏『さよならの次にくる』／円居挽『丸太町ルヴォワール』について触れています。
+#>
+
+#>>> aside:090808_strategy
+#-title 探偵達の新戦略〈試供版〉
+#-href /pages/2009/090808_strategy/
+#-pubdate 2009.08.08
+探偵小説研究会の機関誌『CRITICA』第４号に掲載された文章の試供版です。
+07th Expansion『ひぐらしのなく頃に』／谷川流『涼宮ハルヒの消失』／米澤穂信『夏期限定トロピカルパフェ事件』を論じています。
+二〇〇九年度の探偵小説評論賞に応募し、奨励作を受賞しました。
+#>
+
+#>> section:fairplay 犯人当て小説とフェアプレイ
+#>>> aside:050508_fareplay3
+#-title 犯人当て小説におけるフェアプレイについて
+#-href /pages/2005/050508_fareplay3/
+#-pubdate 2005.05.08
+#>
+
+#>>> aside:000211_fairplay2
+#-title 犯人当て小説のためのフェア・プレイ変換の提案について：補足資料
+#-href /pages/2000/000211_fairplay2/
+#-pubdate 2000.01.15
+#>
+
+#>>> aside:000115_fairplay
+#-title 犯人当て小説のためのフェア・プレイ変換の提案について
+#-href /pages/2000/000115_fairplay/
+#-pubdate 2000.02.11
+#>
+
+#>> section:disptation 論争まとめ記事
+#>>> aside:110310_fareplay4
+#-title ギリシア棺論争発掘録
+#-href /pages/2011/110310_fareplay4/
+#-pubdate 2011.04.10
+エラリー・クイーン『ギリシア棺の謎』の評価を巡り1993年から2001年にかけて主に法月綸太郎、笠井潔、飯城勇三の三氏がくりひろげた論争についてまとめました。
+#>
+
+#>>> aside:061009_devotion
+#-title Ｘ論争黙示録
+#-href /pages/2006/061009_devotion/
+#-pubdate 2006.10.09
+2005年に刊行された東野圭吾『容疑者Ｘの献身』は本格ミステリか否かという問いに端を欲する論争について、主に『ミステリマガジン』誌上の討論内容を中心にまとめました。
+#>
+
+#>> section:mysdoku MYSDOKUレポート
+#>>> aside:160116_mysdoku18
+#-title MYSDOKU18レポート 多島斗志之『黒百合』
+#-href /pages/2016/160116_mysdoku18/
+#-pubdate 2016.01.16
+#>
+
+#>>> aside:151121_mysdoku17
+#-title MYSDOKU17レポート 三津田信三『首無の如き祟るもの』
+#-href /pages/2015/151121_mysdoku17/
+#-pubdate 2015.11.21
+#>
+
+#>>> aside:150726_mysdoku16
+#-title MYSDOKU16レポート 久住四季『星読島に星は流れた』
+#-href /pages/2015/150726_mysdoku16/
+#-pubdate 2015.07.26
+#>
+
+#>>> aside:141230_mysdoku15
+#-title MYSDOKU15レポート 連城三紀彦『夜よ鼠たちのために』
+#-href /pages/2014/141230_mysdoku15/
+#-pubdate 2014.12.30
+#>
+
+#>>> aside:140809_mysdoku13
+#-title MYSDOKU13レポート 十市社『ゴースト≠ノイズ（リダクション）』
+#-href /pages/2014/140809_mysdoku13/
+#-pubdate 2014.08.09
+#>
+
+#>>> aside:140412_mysdoku12
+#-title MYSDOKU12レポート 法月綸太郎『ノックス・マシン』
+#-href /pages/2014/140412_mysdoku12/
+#-pubdate 2014.04.12
+#>
+
+#>>> aside:131130_mysdoku10
+#-title MYSDOKU10レポート 北山猛邦『猫柳十一弦の後悔　不可能犯罪定数』『猫柳十一弦の失敗　探偵助手五箇条』
+#-href /pages/2013/131130_mysdoku10/
+#-pubdate 2013.11.30
+#>
+
+#>>> aside:130407_mysdoku8
+#-title MYSDOKU8レポート 宮内悠介『盤上の夜』
+#-href /pages/2013/130407_mysdoku8/
+#-pubdate 2013.04.07
+#>
+
+#>>> aside:121223_mysdoku7
+#-title MYSDOKU7レポート 七河迦南『空耳の森』
+#-href /pages/2012/121223_mysdoku7/
+#-pubdate 2012.12.30
+#>
+
+#>>> aside:110810_mysdoku6
+#-title MYSDOKU6レポート 高井忍『柳生十兵衛秘剣考』
+#-href /pages/2011/110810_mysdoku6/
+#-pubdate 2011.08.10
+#>
+
+#>>> aside:101114_mysdoku4
+#-title MYSDOKU4レポート 梓崎優『叫びと祈り』
+#-href /pages/2010/101114_mysdoku4/
+#-pubdate 2010.11.14
+#>
+
+#>>> aside:100425_mysdoku3
+#-title MYSDOKU3レポート 島田荘司『斜め屋敷の犯罪』
+#-href /pages/2010/100425_mysdoku3/
+#-pubdate 2010.04.25
+#>
+
+#>>> aside:090928_mysdoku2
+#-title MYSDOKU2レポート 初野晴『1/2の騎士 ～harujion～』
+#-href /pages/2009/090928_mysdoku2/
+#-pubdate 2009.09.28
+#>
+
+#>>> aside:090720_mysdoku1
+#-title MYSDOKU1レポート 米澤穂信『秋期限定栗きんとん事件』
+#-href /pages/2009/090720_mysdoku1/
+#-pubdate 2009.07.20
+#>
+
+#>> section:myscon MYSCONレポート
+#>>> aside:141220_myscon12
+#-title MYSCON12レポート 森川別館はくらりが占拠したニャ
+#-href /pages/2014/141220_myscon12/
+#-pubdate 2014.12.20
+#>
+
+#>>> aside:130721_myscon11
+#-title MYSCON11レポート 「駆逐してやる！ 一匹残らず！」とゑんじさんは云った
+#-href /pages/2013/130721_myscon11/
+#-pubdate 2013.07.21
+#>
+
+#>>> aside:090621_myscon10
+#-title MYSCON10レポート 浅暮先生に敬礼！
+#-href /pages/2009/090621_myscon10/
+#-pubdate 2009.06.21
+#>
+
+#>>> aside:080427_myscon9
+#-title MYSCON9レポート みんな新本格が大好きです
+#-href /pages/2008/080427_myscon9/
+#-pubdate 2008.04.27
+#>
+
+#>>> aside:070424_myscon8
+#-title MYSCON8レポート ずっと反省してましたトホホ
+#-href /pages/2007/070424_myscon8/
+#-pubdate 2007.04.24
+#>
+
+#>>> aside:060424_myscon7
+#-title MYSCON7レポート ダ・ヴィンチ・コードより四大奇書な私達の行き着く先は
+#-href /pages/2006/060424_myscon7/
+#-pubdate 2006.04.24
+#>
+
+#>>> aside:050413_myscon6
+#-title MYSCON6レポート フェアプレイから極楽浄土まで多様化するミステリとボクらの共通認識
+#-href /pages/2005/050413_myscon6/
+#-pubdate 2005.04.13
+#>
+
+#>>> aside:040315_myscon5
+#-title MYSCON5レポート 小一時間問い詰められましたトホホ
+#-href /pages/2004/040315_myscon5/
+#-pubdate 2004.03.15
+#>
+
+#>>> aside:030316_myscon4
+#-title MYSCON4レポート 探偵講談から萌え談義までミステリ花盛り
+#-href /pages/2003/030316_myscon4/
+#-pubdate 2003.03.23
+#>
+
+#>>> aside:020401_myscon3
+#-title MYSCON3レポート 日本のミステリのために私達が今できること(？)
+#-href /pages/2002/020401_myscon3/
+#-pubdate 2002.04.01
+#>
+
+#>> section:mysconplus MYSCON関連
+#>>> aside:080706_mysrec2008
+#-title MYSREC2008 in Tokyoレポ
+#-href /pages/2008/080706_mysrec2008/
+#-pubdate 2008.07.06
+MYSREC2008の参加レポートです。
+#>
+
+#>>> aside:070429_wgm8repo
+#-title MYSCON8犯人当て企画「ザ・ラスト・トリック」始末書
+#-href /pages/2007/070429_wgm8repo/
+#-pubdate 2007.04.29
+MYSCON8犯人当て企画の裏話と反省会です。
+#>
+
+#>>> aside:040315_light
+#-title ライトノベルと本格ミステリ読者達のためのハイブリッドパズルストーリー
+#-href /pages/2004/040315_light/
+#-pubdate 2004.03.15
+MYSCON5深夜の濃ゆい議論をまとめました。
+#>
+
+#>>> aside:030321_cultural
+#-title 本格ミステリ伝説
+#-href /pages/2003/030321_cultural/
+#-pubdate 2003.03.23
+MYSCON4深夜の濃ゆい議論をまとめました。
+#>
+
+#>> section:report 作家講演会／出版イベント
+#>>> aside:111127_repo311ghost
+#-title 「３・１１×ゴーストの未来」トークイベント無気力レポート
+#-href /pages/2011/111127_repo311ghost/
+#-pubdate 2011.11.27
+#>
+
+#>>> aside:111113_repo311world
+#-title 「笠井潔講演会 ～３．１１とセカイ系～」お茶目レポート
+#-href /pages/2011/111113_repo311world/
+#-pubdate 2011.11.13
+#>
+
+#>>> aside:110320_subculwars2
+#-title 『サブカルチャー戦争』刊行記念イベント第二弾「ポスト9.11のハリウッド映画と日本映画」記憶捏造レポート
+#-href /pages/2011/110320_subculwars2/
+#-pubdate 2011.03.20
+#>
+
+#>>> aside:101219_subculwars1
+#-title 『サブカルチャー戦争』刊行記念トークショー不正確レポート
+#-href /pages/2010/101219_subculwars1/
+#-pubdate 2010.12.19
+#>
+
+#>>> aside:090809_nosociety
+#-title 『社会は存在しない』刊行記念トークイベント疑似レポート
+#-href /pages/2009/090809_nosociety/
+#-pubdate 2009.08.09
+#>
+
+#>>> aside:091112_princerepo
+#-title 北山猛邦講演会レポート
+#-href /pages/2009/091112_princerepo/
+#-pubdate 2009.11.12
+#>
+
+#>>> aside:081103_noririnrepo
+#-title 法月綸太郎講演会
+#-href /pages/2008/081103_noririnrepo/
+#-pubdate 2008.11.03
+#>
+
+#>>> aside:051106_mayarepo
+#-title 麻耶雄嵩講演会レポ
+#-href /pages/2005/051106_mayarepo/
+#-pubdate 2005.11.06
+#>
+
+#>> section:digital 資料
+#>>> aside:220509_maven
+#-title maven
+#-href /maven/
+#-pubdate 2022.05.07
+io.github.longfish801のmavenです。
+#>
+
+#>>> aside:081124_novelbook
+#-title LaTeXで小説同人誌を作る
+#-href /pages/2008/081124_novelbook/
+#-pubdate 2008.11.24
+LaTeXで縦書き小説同人誌を作るためのサンプルです。
+#>
