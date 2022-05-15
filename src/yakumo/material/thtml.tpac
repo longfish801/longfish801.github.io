@@ -4,7 +4,6 @@
 #>> dec
 	import org.apache.commons.text.StringEscapeUtils
 #>> args
-	String outKey
 	Map bltxtMap
 	Map appendMap
 #>> return

@@ -35,6 +35,7 @@ script {
 		result 'index', new File('build/docs/index.html')
 	}
 	doLast {
-		results.index.fprint.logs.each { println it }
+		fprint.logs.each { println it }
+		assert fprint.warns.size() == 0
 	}
 }
