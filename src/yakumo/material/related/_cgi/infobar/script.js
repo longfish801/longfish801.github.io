@@ -20,11 +20,13 @@ function pullDown() {
 
 function infobar(res){
 	$('side').innerHTML += tagbanner(res)
+/*
 		+ '<div id="menuImg"><a href="javaScript:pullDown()"><img src="/_style/img/help.png" alt="help" width="43" height="43"></a></div>'
 		+ '<ul id="hiddenMenu">'
 		+ taglinks(res)
 		+ tagShortcut(res)
 		+ '</ul>';
+*/
 }
 
 function tagbanner(res){
