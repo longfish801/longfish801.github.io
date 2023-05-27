@@ -6,17 +6,21 @@
 
 class HTMLTag {
 	tag = '';
-	props = {};
+	_props = {};
 	lowers = [];
 	
 	constructor(tag) {
 		this.tag = tag;
 	}
 	
+	set props(props){
+		Object.assign(this._props, props);
+	}
+	
 	htmlize(){
 		let html = `<${this.tag}`;
-		Object.keys(this.props).forEach((key) => {
-			let val = HTMLTag.escapeHTML(this.props[key]);
+		Object.keys(this._props).forEach((key) => {
+			let val = HTMLTag.escapeHTML(this._props[key]);
 			html += ` ${key}="${val}"`;
 		});
 		if (this.lowers.length == 0) html += '/';
@@ -52,6 +56,12 @@ export class ImgTag extends HTMLTag {
 export class ButtonTag extends HTMLTag {
 	constructor() {
 		super('button');
-		this.props['type'] = 'button';
+		this.props = { type: 'button' };
+	}
+}
+
+export class DivTag extends HTMLTag {
+	constructor() {
+		super('div');
 	}
 }

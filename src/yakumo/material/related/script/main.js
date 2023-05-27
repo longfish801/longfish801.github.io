@@ -9,20 +9,20 @@
 -----
 <!-- バナー一覧 -->
 <div id="bannerList" />
-<!-- ガイドヘッダ -->
-<div id="guideHeader" />
+<!-- サイトヘッダ -->
+<div id="siteHeader" />
 ... 中略 ...
 <script src="/script/main.js" type="module"></script>
 -----
  */
 
-import {Banners, GuideHeader} from './banners/banners.js';
+import {Banners, SiteHeader} from './banners/banners.js';
 
 const setting = {
 	// 表示タグのid属性値
 	id: {
 		bannerList: 'bannerList',
-		guideHeader: 'guideHeader'
+		siteHeader: 'siteHeader'
 	},
 	// ガイドヘッダ
 	header: {
@@ -65,9 +65,7 @@ const setting = {
 // DOMツリー構築完了時
 window.addEventListener('DOMContentLoaded', (event) => {
 	// バナー一覧を表示します
-	let banners = new Banners(setting.banners);
-	banners.show(document.getElementById(setting.id.bannerList));
+	new Banners(setting.banners).show(document.getElementById(setting.id.bannerList));
 	// ガイドヘッダを表示します
-	let header = new GuideHeader(setting.header, banners);
-	header.show(document.getElementById(setting.id.guideHeader));
+	new SiteHeader(setting.header, setting.banners).show(document.getElementById(setting.id.siteHeader));
 });
