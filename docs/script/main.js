@@ -41,22 +41,22 @@ const setting = {
 	banners: [
 		{
 			href: '/ddfl/',
-			src: 'img/banner/ban_ddfr.png',
+			src: '/img/banner/ban_ddfr.png',
 			alt: 'デデフラ'
 		},
 		{
 			href: '/pages/2019/191229_reasoning/',
-			src: 'img/banner/ban_reasoning.png',
+			src: '/img/banner/ban_reasoning.png',
 			alt: '探偵が推理を殺す'
 		},
 		{
 			href: '/pages/2016/160814_hypergame/',
-			src: 'img/banner/ban_hypergame.png',
+			src: '/img/banner/ban_hypergame.png',
 			alt: 'ハィパァゲィム'
 		},
 		{
 			href: '/pages/2008/081027_iron/',
-			src: 'img/banner/ban_iron.png',
+			src: '/img/banner/ban_iron.png',
 			alt: '鉄錆風味歪夢'
 		}
 	]
