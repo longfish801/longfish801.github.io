@@ -24,14 +24,8 @@ dependencies {
 	implementation 'org.codehaus.groovy:groovy-all:3.0.9'
 }
 
-// dosフォルダを削除します
-tasks.register('deleteDocsDir', Delete){
-	delete 'docs'
-}
-
 // 空のbuild/docsフォルダを作成します
 tasks.register('createDocsDir'){
-	dependsOn 'deleteDocsDir'
 	doLast { mkdir 'build/docs' }
 }
 
