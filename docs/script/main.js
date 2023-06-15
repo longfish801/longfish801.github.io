@@ -11,14 +11,19 @@
 <div id="bannerList" />
 <!-- サイトヘッダ -->
 <div id="siteHeader" />
-... 中略 ...
+
+隠蔽箇所を表示するには <button type="button" class="revert-unseen btn btn-primary">ネタバレ解除</button>をクリックしてください。
+
+それは<span class="unseen">秘密</span>です。
+
 <script src="/script/main.js" type="module"></script>
 -----
  */
 
 import {Banners, SiteHeader} from './banners/banners.js';
+import {Unseen} from './unseen/unseen.js';
 
-const setting = {
+const bannersConfig = {
 	// 表示タグのid属性値
 	id: {
 		bannerList: 'bannerList',
@@ -62,10 +67,35 @@ const setting = {
 	]
 }
 
+const unseenConfig = {
+	// 隠蔽/隠蔽解除ボタン
+	buttons: {
+		// クラス名
+		cname: 'revert-unseen',
+		// ボタン名
+		buttonName: {
+			unseen: 'ネタバレを表示',
+			seen: 'ネタバレを隠す'
+		}
+	},
+	// 隠蔽箇所
+	spans: {
+		// クラス名
+		cname: 'unseen',
+		// 表示/非表示制御のためのクラス名
+		controlCname: {
+			hide: 'unseen-hide',
+			show: 'unseen-show'
+		}
+	}
+}
+
 // DOMツリー構築完了時
 window.addEventListener('DOMContentLoaded', (event) => {
 	// バナー一覧を表示します
-	new Banners(setting.banners).show(document.getElementById(setting.id.bannerList));
+	new Banners(bannersConfig.banners).show(document.getElementById(bannersConfig.id.bannerList));
 	// ガイドヘッダを表示します
-	new SiteHeader(setting.header, setting.banners).show(document.getElementById(setting.id.siteHeader));
+	new SiteHeader(bannersConfig.header, bannersConfig.banners).show(document.getElementById(bannersConfig.id.siteHeader));
+	// 隠蔽解除ボタンを初期化します
+	new Unseen(unseenConfig);
 });
