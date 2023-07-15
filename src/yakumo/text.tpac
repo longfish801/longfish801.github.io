@@ -258,6 +258,14 @@ MYSCON7の読書会をきっかけに書いた文章です。
 あの衝撃的なラストについて考えを巡らせました。
 #>
 
+#>>> article:050508_fareplay3
+#-title 犯人当て小説におけるフェアプレイについて
+#-href /pages/2005/050508_fareplay3/
+#-pubdate 2005.05.08
+犯人当て小説でフェア・プレイは実現可能か考えました。
+関連ページとして【リンク：犯人当て小説のためのフェア・プレイ変換の提案について：/pages/2000/000115_fairplay/】があります。
+#>
+
 #>>> article:050413_firefly
 #-title 蛍の旋律に我々は如何にして幻惑されたか
 #-href /pages/2005/050413_firefly/
@@ -280,6 +288,62 @@ MYSCON5の読書会にてゲリラ配布しました。
 #-href /pages/2003/030318_fukui/
 #-pubdate 2003.03.23
 安田輝雄［編］『福井県名探偵実話集』の紹介です。
+#>
+
+#>>> article:000115_fairplay
+#-title 犯人当て小説のためのフェア・プレイ変換の提案について
+#-href /pages/2000/000115_fairplay/
+#-pubdate 2000.02.11
+MYSCON雑談BBSでの議論をきっかけに犯人当て小説でのフェア・プレイの実現について考察しました。
+#>
+
+#>> section:report 作家講演会／出版イベント
+#>>> article:111127_repo311ghost
+#-title 「３・１１×ゴーストの未来」トークイベント無気力レポート
+#-href /pages/2011/111127_repo311ghost/
+#-pubdate 2011.11.27
+#>
+
+#>>> article:111113_repo311world
+#-title 「笠井潔講演会 ～３．１１とセカイ系～」お茶目レポート
+#-href /pages/2011/111113_repo311world/
+#-pubdate 2011.11.13
+#>
+
+#>>> article:110320_subculwars2
+#-title 『サブカルチャー戦争』刊行記念イベント第二弾「ポスト9.11のハリウッド映画と日本映画」記憶捏造レポート
+#-href /pages/2011/110320_subculwars2/
+#-pubdate 2011.03.20
+#>
+
+#>>> article:101219_subculwars1
+#-title 『サブカルチャー戦争』刊行記念トークショー不正確レポート
+#-href /pages/2010/101219_subculwars1/
+#-pubdate 2010.12.19
+#>
+
+#>>> article:090809_nosociety
+#-title 『社会は存在しない』刊行記念トークイベント疑似レポート
+#-href /pages/2009/090809_nosociety/
+#-pubdate 2009.08.09
+#>
+
+#>>> article:091112_princerepo
+#-title 北山猛邦講演会レポート
+#-href /pages/2009/091112_princerepo/
+#-pubdate 2009.11.12
+#>
+
+#>>> article:081103_noririnrepo
+#-title 法月綸太郎講演会
+#-href /pages/2008/081103_noririnrepo/
+#-pubdate 2008.11.03
+#>
+
+#>>> article:051106_mayarepo
+#-title 麻耶雄嵩講演会レポ
+#-href /pages/2005/051106_mayarepo/
+#-pubdate 2005.11.06
 #>
 
 #>> section:resume 早引表／登場人物一覧
@@ -446,25 +510,6 @@ MYSCON5の読書会にてゲリラ配布しました。
 探偵小説研究会の機関誌『CRITICA』第４号に掲載された文章の試供版です。
 07th Expansion『ひぐらしのなく頃に』／谷川流『涼宮ハルヒの消失』／米澤穂信『夏期限定トロピカルパフェ事件』を論じています。
 二〇〇九年度の探偵小説評論賞に応募し、奨励作を受賞しました。
-#>
-
-#>> section:fairplay 犯人当て小説とフェアプレイ
-#>>> article:050508_fareplay3
-#-title 犯人当て小説におけるフェアプレイについて
-#-href /pages/2005/050508_fareplay3/
-#-pubdate 2005.05.08
-#>
-
-#>>> article:000211_fairplay2
-#-title 犯人当て小説のためのフェア・プレイ変換の提案について：補足資料
-#-href /pages/2000/000211_fairplay2/
-#-pubdate 2000.01.15
-#>
-
-#>>> article:000115_fairplay
-#-title 犯人当て小説のためのフェア・プレイ変換の提案について
-#-href /pages/2000/000115_fairplay/
-#-pubdate 2000.02.11
 #>
 
 #>> section:disptation 論争まとめ記事
@@ -655,55 +700,6 @@ MYSCON5深夜の濃ゆい議論をまとめました。
 #-href /pages/2003/030321_cultural/
 #-pubdate 2003.03.23
 MYSCON4深夜の濃ゆい議論をまとめました。
-#>
-
-#>> section:report 作家講演会／出版イベント
-#>>> article:111127_repo311ghost
-#-title 「３・１１×ゴーストの未来」トークイベント無気力レポート
-#-href /pages/2011/111127_repo311ghost/
-#-pubdate 2011.11.27
-#>
-
-#>>> article:111113_repo311world
-#-title 「笠井潔講演会 ～３．１１とセカイ系～」お茶目レポート
-#-href /pages/2011/111113_repo311world/
-#-pubdate 2011.11.13
-#>
-
-#>>> article:110320_subculwars2
-#-title 『サブカルチャー戦争』刊行記念イベント第二弾「ポスト9.11のハリウッド映画と日本映画」記憶捏造レポート
-#-href /pages/2011/110320_subculwars2/
-#-pubdate 2011.03.20
-#>
-
-#>>> article:101219_subculwars1
-#-title 『サブカルチャー戦争』刊行記念トークショー不正確レポート
-#-href /pages/2010/101219_subculwars1/
-#-pubdate 2010.12.19
-#>
-
-#>>> article:090809_nosociety
-#-title 『社会は存在しない』刊行記念トークイベント疑似レポート
-#-href /pages/2009/090809_nosociety/
-#-pubdate 2009.08.09
-#>
-
-#>>> article:091112_princerepo
-#-title 北山猛邦講演会レポート
-#-href /pages/2009/091112_princerepo/
-#-pubdate 2009.11.12
-#>
-
-#>>> article:081103_noririnrepo
-#-title 法月綸太郎講演会
-#-href /pages/2008/081103_noririnrepo/
-#-pubdate 2008.11.03
-#>
-
-#>>> article:051106_mayarepo
-#-title 麻耶雄嵩講演会レポ
-#-href /pages/2005/051106_mayarepo/
-#-pubdate 2005.11.06
 #>
 
 #>> section:digital 資料
