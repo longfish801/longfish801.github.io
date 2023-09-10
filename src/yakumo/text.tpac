@@ -711,6 +711,13 @@ MYSCON4深夜の濃ゆい議論をまとめました。
 #>
 
 #>> section:digital 資料
+#>>> article:230910_regexpout
+#-title プレーンテキストだってVSCodeでアウトラインを作りたい
+#-href /pages/2023/230910_regexpout/
+#-pubdate 2023.09.10
+見出しのフォーマットを正規表現で指定してアウトラインを生成するVSCodeの拡張機能を作りました。
+#>
+
 #>>> article:220509_maven
 #-title maven
 #-href /maven/
