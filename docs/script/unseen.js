@@ -4,6 +4,38 @@
  * Copyright (C) io.github.longfish801 All Rights Reserved.
  */
 
+/*
+文字列を読めないよう隠蔽します。
+文字色と同じ背景色をつけることで、マウスで選択しなければ読めないようにします。
+マウスを使用できない環境を考慮し、ボタンでも隠蔽/隠蔽解除を可能にします。
+ボタンをクリックすることで隠蔽を解除します。
+もう一度ボタンをクリックすると再び隠蔽します。
+
+文字色の変更は CSSで制御します。
+JavaScriptによる処理の制約上、rgbaで指定する必要があります。
+
+---
+span.unseen.unseen-hide {
+	background-color: rgba(0, 0, 0.2, 1.0);
+	color: rgba(0, 0, 0.2, 1.0);
+}
+span.unseen.unseen-show {
+	background-color: rgba(0, 0, 0.2, 0.2);
+	color: rgba(0, 0, 0.2, 1.0);
+}
+---
+
+
+---
+<button type="button" class="revert-unseen btn btn-primary">ネタバレ解除</button>
+---
+
+---
+それは<span class="unseen">秘密</span>です。
+---
+
+ */
+
 /**
  * 隠蔽処理
  */

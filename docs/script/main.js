@@ -5,23 +5,17 @@
  */
 
 /*
-以下のように、表示したい箇所に特定の id属性値を指定したタグを記述してください。
------
-<!-- バナー一覧 -->
-<div id="bannerList" />
-<!-- サイトヘッダ -->
-<div id="siteHeader" />
+本JavaScriptを利用するには bodyタグ内に以下を記述してください。
+詳細はサブフォルダ内の各JavaScriptファイルのヘッダを参照してください。
 
-隠蔽箇所を表示するには <button type="button" class="revert-unseen btn btn-primary">ネタバレ解除</button>をクリックしてください。
-
-それは<span class="unseen">秘密</span>です。
-
+---
 <script src="/script/main.js" type="module"></script>
------
+---
  */
 
-import {Banners, SiteHeader} from './banners/banners.js';
-import {Unseen} from './unseen/unseen.js';
+import {Banners, SiteHeader} from './banners.js';
+import {Unseen} from './unseen.js';
+import {NDLThum} from './ndlthum.js';
 
 const bannersConfig = {
 	// 表示タグのid属性値
@@ -90,6 +84,15 @@ const unseenConfig = {
 	}
 }
 
+const ndlthumConfig = {
+	// クラス名
+	cname: 'ndlthum',
+	// 書影画像が存在しないとき代替表示する画像へのパス
+	noimage: '/img/cover/noimage.png',
+	// 書影画像の表示幅のデフォルト値
+	dfltWidth: 150
+}
+
 // DOMツリー構築完了時
 window.addEventListener('DOMContentLoaded', (event) => {
 	// バナー一覧を表示します
@@ -98,4 +101,6 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	new SiteHeader(bannersConfig.header, bannersConfig.banners).show(document.getElementById(bannersConfig.id.siteHeader));
 	// 隠蔽解除ボタンを初期化します
 	new Unseen(unseenConfig);
+	//  国立国会図書館サーチを利用した書影を表示します
+	new NDLThum(ndlthumConfig);
 });

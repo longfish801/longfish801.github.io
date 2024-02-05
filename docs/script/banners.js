@@ -4,6 +4,17 @@
  * Copyright (C) io.github.longfish801 All Rights Reserved.
  */
 
+/*
+バナー一覧とサイトヘッダを表示します。
+以下のように、表示したい箇所にdivタグを記述してください。
+-----
+<!-- バナー一覧 -->
+<div id="bannerList" />
+<!-- サイトヘッダ -->
+<div id="siteHeader" />
+-----
+ */
+
 import {AnchorTag, ImgTag, ButtonTag, DivTag} from './html.js';
 
 export class Banners {
