@@ -19,7 +19,7 @@
 サンプルは以下のとおりです。
 
 ---
-<div class="ndlthum" data-isbn13="978-4041111659" data-keyword="青崎有吾『地雷グリコ』" data-width="240"></div>
+<div class="ndlthum" data-isbn13="978-4041111659" data-keyword="青崎有吾『地雷グリコ』" data-width="300"></div>
 ---
 
  */
@@ -32,16 +32,17 @@ export class NDLThum {
 		this.cname = config.cname
 		this.noimage = config.noimage
 		this.dfltWidth = config.dfltWidth
-		document.querySelectorAll('div.${this.cname}').forEach((div) => { createEachThumbnail(div) });
+		document.querySelectorAll(`div.${this.cname}`).forEach((div) => { this.createEachThumbnail(div) });
 	}
 	
 	createEachThumbnail(div){
 		const keyword = div.getAttribute('data-keyword');
 		const isbn = div.getAttribute('data-isbn13').replaceAll('-', '');
 		const width = div.getAttribute('data-width');
+		let anchor;
 		if (keyword){
 			// リンクのタグを作成します
-			let anchor = document.createElement('a');
+			anchor  = document.createElement('a');
 			anchor.href = `https://www.google.com/search?q=${encodeURIComponent(keyword)}&ie=UTF-8`;
 			anchor.target = '_blank';
 		}

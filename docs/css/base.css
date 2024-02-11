@@ -102,11 +102,13 @@ span.unseen.unseen-show {
 }
 div.amathum {
 	margin-left: 1rem;
+	margin-bottom: 0.5rem;
 	float: right;
 	clear:right;
 }
 div.ndlthum {
 	margin-left: 1rem;
+	margin-bottom: 0.5rem;
 	float: right;
 	clear:right;
 }
