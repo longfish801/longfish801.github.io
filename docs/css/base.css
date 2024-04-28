@@ -92,11 +92,11 @@ span.dot {
 	-moz-text-emphasis-style: filled;
 	-ms-text-emphasis-style: filled;
 }
-span.unseen.unseen-hide {
+.unseen.unseen-hide {
 	background-color: rgba(0, 0, 0.2, 1.0);
 	color: rgba(0, 0, 0.2, 1.0);
 }
-span.unseen.unseen-show {
+.unseen.unseen-show {
 	background-color: rgba(0, 0, 0.2, 0.2);
 	color: rgba(0, 0, 0.2, 1.0);
 }

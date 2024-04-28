@@ -73,7 +73,7 @@ const unseenConfig = {
 		}
 	},
 	// 隠蔽箇所
-	spans: {
+	target: {
 		// クラス名
 		cname: 'unseen',
 		// 表示/非表示制御のためのクラス名
@@ -93,8 +93,7 @@ const ndlthumConfig = {
 	dfltWidth: 150
 }
 
-// DOMツリー構築完了時
-window.addEventListener('DOMContentLoaded', (event) => {
+export function main(event){
 	// バナー一覧を表示します
 	new Banners(bannersConfig.banners).show(document.getElementById(bannersConfig.id.bannerList));
 	// ガイドヘッダを表示します
@@ -103,4 +102,7 @@ window.addEventListener('DOMContentLoaded', (event) => {
 	new Unseen(unseenConfig);
 	//  国立国会図書館サーチを利用した書影を表示します
 	new NDLThum(ndlthumConfig);
-});
+}
+
+// DOMツリー構築完了時
+window.addEventListener('DOMContentLoaded', main);

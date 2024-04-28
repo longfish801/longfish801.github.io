@@ -15,23 +15,30 @@
 JavaScriptによる処理の制約上、rgbaで指定する必要があります。
 
 ---
-span.unseen.unseen-hide {
+.unseen.unseen-hide {
 	background-color: rgba(0, 0, 0.2, 1.0);
 	color: rgba(0, 0, 0.2, 1.0);
 }
-span.unseen.unseen-show {
+.unseen.unseen-show {
 	background-color: rgba(0, 0, 0.2, 0.2);
 	color: rgba(0, 0, 0.2, 1.0);
 }
 ---
 
+以下の場合、ボタンをクリックすると spanタグ内を隠蔽解除/隠蔽します。
+class属性に "unseen"を指定しているタグすべてが隠蔽解除/隠蔽の対象になります。
 
 ---
 <button type="button" class="revert-unseen btn btn-primary">ネタバレ解除</button>
+それは<span class="unseen">秘密</span>です。
 ---
 
+以下の場合、ボタンをクリックすると divタグ内を隠蔽解除/隠蔽します。
+buttonタグの data-target属性に指定した値のid属性値があるタグひとつだけを隠蔽解除/隠蔽します。
+
 ---
-それは<span class="unseen">秘密</span>です。
+<button type="button" class="revert-unseen btn btn-primary" data-target="secret">ネタバレ解除</button>
+<div class="unseen" id="secret">それは秘密です。</div>
 ---
 
  */
@@ -41,45 +48,44 @@ span.unseen.unseen-show {
  */
 export class Unseen {
 	constructor(config) {
-		let buttons = new UnseenButtons(config.buttons);
-		let spans = new UnseenSpans(config.spans);
-		let clickFnUnseen, clickFnSeen;
-		clickFnUnseen = () => {
-			buttons.unseen(clickFnSeen);
-			spans.unseen();
-		}
-		clickFnSeen = () => {
-			buttons.seen(clickFnUnseen);
-			spans.seen();
-		}
-		buttons.unseen(clickFnSeen);
-		spans.unseen();
+		const target = new UnseenTarget(config.target);
+		target.unseen(null);
+		const operate = new UnseenOperate(config.buttons, target);
+		operate.unseen();
 	}
 }
-
 /**
- * 隠蔽/隠蔽解除ボタン
+ * 隠蔽/隠蔽解除操作
  */
-class UnseenButtons {
-	constructor(config) {
+class UnseenOperate {
+	constructor(config, target) {
 		this.cname = config.cname;
 		this.buttonNameUnseen = config.buttonName.unseen;
 		this.buttonNameSeen = config.buttonName.seen;
+		this.target = target;
 	}
 	
-	unseen(clickFn){
-		this.#modifyButton(this.buttonNameUnseen, clickFn);
-	}
-	
-	seen(clickFn){
-		this.#modifyButton(this.buttonNameSeen, clickFn);
-	}
-	
-	#modifyButton(text, clickFn){
+	unseen(){
 		let buttons = document.getElementsByClassName(this.cname);
 		for (let cnt = 0; cnt < buttons.length; cnt ++){
-			buttons[cnt].textContent = text;
-			buttons[cnt].addEventListener('click', clickFn);
+			buttons[cnt].textContent = this.buttonNameUnseen;
+			const targetID = buttons[cnt].getAttribute('data-target');
+			buttons[cnt].addEventListener('click', () => {
+				this.seen();
+				this.target.seen(targetID);
+			});
+		}
+	}
+	
+	seen(){
+		let buttons = document.getElementsByClassName(this.cname);
+		for (let cnt = 0; cnt < buttons.length; cnt ++){
+			buttons[cnt].textContent = this.buttonNameSeen;
+			const targetID = buttons[cnt].getAttribute('data-target');
+			buttons[cnt].addEventListener('click', () => {
+				this.unseen();
+				this.target.unseen(targetID);
+			});
 		}
 	}
 }
@@ -87,26 +93,38 @@ class UnseenButtons {
 /**
  * 隠蔽箇所
  */
-class UnseenSpans {
+class UnseenTarget {
 	constructor(config) {
 		this.cname = config.cname;
 		this.cnameHide = config.controlCname.hide;
 		this.cnameShow = config.controlCname.show;
 	}
 	
-	unseen(){
-		this.#modifyClass(this.cnameHide, this.cnameShow);
+	unseen(targetID){
+		if (targetID){
+			let target = document.getElementById(targetID);
+			target.classList.add(this.cnameHide);
+			target.classList.remove(this.cnameShow);
+		} else {
+			let elems = document.getElementsByClassName(this.cname);
+			for (let cnt = 0; cnt < elems.length; cnt ++){
+				elems[cnt].classList.add(this.cnameHide);
+				elems[cnt].classList.remove(this.cnameShow);
+			}
+		}
 	}
 	
-	seen(){
-		this.#modifyClass(this.cnameShow, this.cnameHide);
-	}
-	
-	#modifyClass(addCname, removeCname){
-		let spans = document.getElementsByClassName(this.cname);
-		for (let cnt = 0; cnt < spans.length; cnt ++){
-			spans[cnt].classList.add(addCname);
-			spans[cnt].classList.remove(removeCname);
+	seen(targetID){
+		if (targetID){
+			let target = document.getElementById(targetID);
+			target.classList.add(this.cnameShow);
+			target.classList.remove(this.cnameHide);
+		} else {
+			let elems = document.getElementsByClassName(this.cname);
+			for (let cnt = 0; cnt < elems.length; cnt ++){
+				elems[cnt].classList.add(this.cnameShow);
+				elems[cnt].classList.remove(this.cnameHide);
+			}
 		}
 	}
 }
