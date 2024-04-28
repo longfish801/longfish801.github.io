@@ -44,6 +44,11 @@ const bannersConfig = {
 			alt: 'デデフラ'
 		},
 		{
+			href: '/readnow/',
+			src: '/img/banner/ban_readnow.png',
+			alt: '読了なう'
+		},
+		{
 			href: '/pages/2019/191229_reasoning/',
 			src: '/img/banner/ban_reasoning.png',
 			alt: '探偵が推理を殺す'
