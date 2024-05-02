@@ -52,6 +52,10 @@ export class NDLThum {
 		img.width = (width)? width : this.dfltWidth;
 		if (keyword) img.alt = keyword;
 		img.onerror = () => { img.src = this.noimage; };
+		// いったん子要素をすべて削除します（再読込を考慮）
+		while (div.firstChild){
+			div.removeChild(div.firstChild);
+		}
 		// 書影表示のための要素を格納します
 		if (keyword){
 			div.appendChild(anchor);
