@@ -51,7 +51,7 @@ export class Unseen {
 		const target = new UnseenTarget(config.target);
 		target.unseen(null);
 		const operate = new UnseenOperate(config.buttons, target);
-		operate.unseen();
+		operate.unseen(null);
 	}
 }
 /**
@@ -65,25 +65,29 @@ class UnseenOperate {
 		this.target = target;
 	}
 	
-	unseen(){
-		let buttons = document.getElementsByClassName(this.cname);
+	unseen(targetID){
+		let buttons = (targetID)
+			? document.querySelectorAll(`button[data-target="${targetID}"]`)
+			: document.getElementsByClassName(this.cname);
 		for (let cnt = 0; cnt < buttons.length; cnt ++){
 			buttons[cnt].textContent = this.buttonNameUnseen;
 			const targetID = buttons[cnt].getAttribute('data-target');
 			buttons[cnt].addEventListener('click', () => {
-				this.seen();
+				this.seen(targetID);
 				this.target.seen(targetID);
 			});
 		}
 	}
 	
-	seen(){
-		let buttons = document.getElementsByClassName(this.cname);
+	seen(targetID){
+		let buttons = (targetID)
+			? document.querySelectorAll(`button[data-target="${targetID}"]`)
+			: document.getElementsByClassName(this.cname);
 		for (let cnt = 0; cnt < buttons.length; cnt ++){
 			buttons[cnt].textContent = this.buttonNameSeen;
 			const targetID = buttons[cnt].getAttribute('data-target');
 			buttons[cnt].addEventListener('click', () => {
-				this.unseen();
+				this.unseen(targetID);
 				this.target.unseen(targetID);
 			});
 		}
