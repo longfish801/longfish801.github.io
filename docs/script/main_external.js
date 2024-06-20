@@ -17,3 +17,6 @@ window.addEventListener('newscreen', (event) => {
 window.addEventListener('load', (event) => {
 	main(event);
 })
+window.addEventListener('visibilitychange', (event) => {
+	main(event);
+})
