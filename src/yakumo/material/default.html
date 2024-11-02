@@ -50,8 +50,12 @@
 			line-height: 2.3rem;
 		}
 
-		img.logo {
+		img.logo_rad_yes {
 			border-radius: 15px;
+			height: 2.2rem;
+		}
+
+		img.logo_rad_no {
 			height: 2.2rem;
 		}
 
@@ -132,7 +136,7 @@
 	<nav class="row justify-content-center align-items-center my-3 p-3">
 		<nav class="logos col-lg-6 text-center">
 			<% draft.solve('/draft/logos').lowers.values().each { def logo -> %>
-			<a href="${logo.href}"><img src="${logo.src}" alt="${logo.altText}" class="logo" /></a>
+			<a href="${logo.href}"><img src="${logo.src}" alt="${logo.altText}" class="logo_rad_${logo.rad}" /></a>
 			<% } %>
 		</nav>
 		<nav class="col-lg-6 text-center p-3">
