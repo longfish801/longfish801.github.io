@@ -2,6 +2,23 @@
 #> tab:novel 創作小説
 #-col 6
 #>> section:shortstory 短編小説
+#>>> article:260719_freezingnight
+#-title 善人たちの凍える夜
+#-href https://kakuyomu.jp/works/2912051604378188661
+#-logo @/draft/logos/logo:kakuyomu
+#-ccopy
+その男を殺すには、凍死という手段でなければならなかった
+#-pubdate 2026.07.19
+#-pnum 87
+県道沿いにある小さな喫茶店。
+雪の積もった朝、裏手の駐車場に死体がみつかる。
+手足を拘束され、猿ぐつわをされて助けを呼べず、
+薄着のまま放置されて男は凍死していた。
+犯人はなぜ、こんな残酷な殺し方を選んだのか。
+「誰か僕のホームズになってほしいんですよ」
+アルバイト探偵、阿里隆が推理を愉しむ。
+#>
+
 #>>> article:230824_redhood
 #-title 狼を食べた赤ずきん
 #-href https://kakuyomu.jp/works/16817330662558444594
