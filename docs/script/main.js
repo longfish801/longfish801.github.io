@@ -13,9 +13,9 @@
 ---
  */
 
-import {Banners, SiteHeader} from './banners.js';
-import {Unseen} from './unseen.js';
-import {NDLThum} from './ndlthum.js';
+import { Banners, SiteHeader } from './banners.js';
+import { Unseen } from './unseen.js';
+import { NDLThum } from './ndlthum.js';
 
 const bannersConfig = {
 	// 表示タグのid属性値
@@ -95,17 +95,19 @@ const ndlthumConfig = {
 	// 書影画像が存在しないとき代替表示する画像へのパス
 	noimage: '/img/cover/noimage.png',
 	// 書影画像の表示幅のデフォルト値
-	dfltWidth: 150
+	dfltWidth: 150,
+	// APIキー
+	apiKey: 'AIzaSyCNZowLTPQImrIe0LJoaPozTxXcua7yKpM'
 }
 
-export function main(event){
+export function main(event) {
 	// バナー一覧を表示します
 	new Banners(bannersConfig.banners).show(document.getElementById(bannersConfig.id.bannerList));
 	// ガイドヘッダを表示します
 	new SiteHeader(bannersConfig.header, bannersConfig.banners).show(document.getElementById(bannersConfig.id.siteHeader));
 	// 隠蔽解除ボタンを初期化します
 	new Unseen(unseenConfig);
-	//  国立国会図書館サーチを利用した書影を表示します
+	//  書影を表示します
 	new NDLThum(ndlthumConfig);
 }
 

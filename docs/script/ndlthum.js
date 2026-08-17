@@ -25,43 +25,68 @@
  */
 
 /**
- * 国立国会図書館サーチを利用した書影を表示します
+ * Google Books APIsを利用した書影を表示します
  */
 export class NDLThum {
 	constructor(config) {
 		this.cname = config.cname
 		this.noimage = config.noimage
 		this.dfltWidth = config.dfltWidth
+		this.apiKey = config.apiKey
 		document.querySelectorAll(`div.${this.cname}`).forEach((div) => { this.createEachThumbnail(div) });
 	}
-	
-	createEachThumbnail(div){
+
+	// 書影画像のimgタグを生成します
+	createEachThumbnail(div) {
 		const keyword = div.getAttribute('data-keyword');
 		const isbn = div.getAttribute('data-isbn13').replaceAll('-', '');
 		const width = div.getAttribute('data-width');
 		let anchor;
-		if (keyword){
+		if (keyword) {
 			// リンクのタグを作成します
-			anchor  = document.createElement('a');
+			anchor = document.createElement('a');
 			anchor.href = `https://www.google.com/search?q=${encodeURIComponent(keyword)}&ie=UTF-8`;
 			anchor.target = '_blank';
 		}
-		// 書影画像のタグを作成します
-		let img = document.createElement('img');
-		img.src = `https://ndlsearch.ndl.go.jp/thumbnail/${isbn}.jpg`;
-		img.width = (width)? width : this.dfltWidth;
-		if (keyword) img.alt = keyword;
-		img.onerror = () => { img.src = this.noimage; };
-		// いったん子要素をすべて削除します（再読込を考慮）
-		while (div.firstChild){
-			div.removeChild(div.firstChild);
-		}
-		// 書影表示のための要素を格納します
-		if (keyword){
-			div.appendChild(anchor);
-			anchor.appendChild(img);
-		} else {
-			div.appendChild(img);
+		// 書影の画像URLを取得します
+		this.getThumbnail(isbn).then(thumnail => {
+			// 書影画像のタグを作成します
+			let img = document.createElement('img');
+			img.src = thumnail;
+			img.width = (width) ? width : this.dfltWidth;
+			if (keyword) img.alt = keyword;
+			img.onerror = () => { img.src = this.noimage; };
+			// いったん子要素をすべて削除します（再読込を考慮）
+			while (div.firstChild) {
+				div.removeChild(div.firstChild);
+			}
+			// 書影表示のための要素を格納します
+			if (keyword) {
+				div.appendChild(anchor);
+				anchor.appendChild(img);
+			} else {
+				div.appendChild(img);
+			}
+		});
+	}
+
+	// Google Books APIsから書影の画像URLを取得します
+	// 取得失敗時や書影が存在しない場合は、代替表示する画像へのパスを返します
+	async getThumbnail(isbn) {
+		let thumnail = this.noimage;
+		let apiURL = `https://www.googleapis.com/books/v1/volumes?q=isbn:${isbn}&key=${this.apiKey}`;
+		try {
+			const response = await fetch(apiURL);
+			if (!response.ok) {
+				//console.warn('Failed to fetch', apiURL, response);
+				return thumnail;
+			}
+			const jsonized = await response.json();
+			thumnail = jsonized?.items?.[0]?.volumeInfo?.imageLinks?.smallThumbnail ?? thumnail;
+		} catch (error) {
+			console.error('Failed to get thumnail', apiURL, error);
+		} finally {
+			return thumnail;
 		}
 	}
 }
